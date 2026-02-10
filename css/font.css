@@ -1,0 +1,214 @@
+@font-face {
+    font-family: SFP;
+    src: url(../fonts/SFPixelate.ttf);
+}
+@font-face {
+    font-family: PIX;
+    src: url(../fonts/PixeloidMono.ttf);
+}
+@font-face {
+    font-family: FP10;
+    src: url(../fonts/FusionPixel10.ttf);
+}
+@font-face {
+    font-family: FP8;
+    src: url(../fonts/FusionPixel8.ttf);
+}
+
+:root {
+    --text-shadow-light:    -1px -1px  0 var(--color-white),
+                            1px  -1px  0 var(--color-white),
+                            -1px 1px   0 var(--color-white),
+                            1px  1px   0 var(--color-white),
+                            -1px 0     0 var(--color-white),
+                            1px  0     0 var(--color-white),
+                            0    1px   0 var(--color-white),
+                            0     1px  0 var(--color-white);
+    --text-shadow-thin:     -1px -1px  0 var(--color-white),
+                            1px  -1px  0 var(--color-white),
+                            -1px 1px   0 var(--color-white),
+                            1px  1px   0 var(--color-white),
+                            -1px 0     0 var(--color-white),
+                            1px  0     0 var(--color-white),
+                            0    1px   0 var(--color-white),
+                            0    -1px  0 var(--color-white);
+    --text-shadow-green:    -1px -1px  0 var(--color-green),
+                            1px  -1px  0 var(--color-green),
+                            -1px 1px   0 var(--color-green),
+                            1px  1px   0 var(--color-green),
+                            -1px 0     0 var(--color-green),
+                            1px  0     0 var(--color-green),
+                            0    1px   0 var(--color-green),
+                            0    -1px  0 var(--color-green);
+    --text-shadow-blue:    -1px  -1px  0 var(--color-blue),
+                            1px  -1px  0 var(--color-blue),
+                            -1px 1px   0 var(--color-blue),
+                            1px  1px   0 var(--color-blue),
+                            -1px 0     0 var(--color-blue),
+                            1px  0     0 var(--color-blue),
+                            0    1px   0 var(--color-blue),
+                            0    -1px  0 var(--color-blue);
+    --text-shadow-dark:    -1px  -1px  0 black,
+                            1px  -1px  0 black,
+                            -1px 1px   0 black,
+                            1px  1px   0 black,
+                            -1px 0     0 black,
+                            1px  0     0 black,
+                            0    1px   0 black,
+                            0    -1px  0 black;
+}
+
+body {
+    color: black;
+    font-family: FP10;
+}
+.code {
+    font: 13px / normal Monaco, Menlo, "Ubuntu Mono", Consolas, "Source Code Pro", source-code-pro, monospace;
+}
+code, .code {
+    color: var(--color-red);
+    text-transform: initial;
+    font-size: inherit;
+}
+h1 {
+    font-family: FP10;
+    color: var(--color-darker-grey);
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+h2 {
+    color: var(--color-darker-grey);
+    font-size: 30px;
+    font-weight: normal;
+    text-shadow: var(--text-shadow-light);
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: var(--text-shadow-light);
+}
+/* h4 {
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 12pt;
+    font-weight: normal;
+} */
+
+p, ul, li {
+    font-family: FP10;
+    font-size: 16px;
+    line-height: 18px;
+    word-spacing: -3px;
+}
+p.accent {
+    color: var(--color-grey);
+    font-size: 12px;
+    line-height: 14px;
+}
+p.no-margin {    
+    margin: 0;
+}
+
+b, strong {
+    font-weight: inherit;
+    color: var(--color-blue);
+    background-color: #dadeed;
+    /* text-shadow: var(--text-shadow-blue); */
+}
+p.accent b {
+    color: white;
+}
+
+div.card h3,
+div.btn h3, div.clickable h3,
+div.title h3, div.tile-title h3 {
+    user-select: none;
+    margin: 0;
+}
+div.title h3 {
+    transform: translateY(-0.5em);
+    line-height: 16px;
+}
+div.tile-title h3 {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-darker-grey);
+}
+div.btn h3, a.btn h3 {
+    font-size: 10pt;
+    text-align: center;
+    line-height: 26px;
+}
+div.btn.small h3 {
+    font-size: 9pt;
+    line-height: 20px;
+    text-shadow: var(--text-shadow-thin);
+}
+div.btn.wide h3 {
+    font-size: 12pt;
+}
+div#right div#social div h3 {
+    /* color: var(--color-green); */
+    text-align: center;
+    line-height: 69px;
+    text-shadow: var(--text-shadow-light);
+}
+div#about div h3 {
+    text-align: center;
+    line-height: 78px;
+    text-shadow: var(--text-shadow-light);
+}
+div#nav div.nav-link div h3, div#contact div.contact-link a h3 {
+    text-shadow: var(--text-shadow-thin);
+}
+div.card-letter h3 {
+    user-select: none;
+    margin: 0;
+    font-size: 20px;
+}
+div.card-letter.heart h3,
+div.card-letter.diamond h3 {
+    color: #e01212;
+}
+
+div#middle div.tile div.tile div.tile-footer * {
+    color: white;
+}
+
+div#right div#code-editor div#output {
+    font-size: 12px;
+}
+div#right div#code-editor div#output p {
+    line-height: 15px;
+}
+/* div#right div#code-editor div#output p:first-child {
+    margin-block-start: 0;
+} */
+div#right div#code-editor div#control div:last-child {
+    color: var(--color-white);
+    font-size: 8pt;
+    line-height: 16px;
+}
+
+div#leaderboard div.tile:first-child div.game-rank {
+    color: #e01212;
+}
+div#leaderboard div.tile div.game-name {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 14px;
+    text-align: right;
+    text-transform: capitalize;
+    color: var(--color-light-grey);
+}
+
+a, a:visited {
+    text-decoration: underline 1.5px;
+    text-underline-offset: 2px;
+    color: var(--color-blue);
+}
+/* div.nav-link a:hover h3 {
+    transform: translateY(-12px);
+} */

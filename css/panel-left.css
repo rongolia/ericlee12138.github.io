@@ -1,0 +1,155 @@
+div#left div {
+    width: 190px;
+}
+div#left #toc {
+    position: sticky;
+    top: 12px;
+}
+
+
+div#poker {
+    background-color: transparent;
+    min-height: 350px;
+    z-index: 1;
+}
+div#poker-card {
+    height: 350px;
+    position: relative;
+    z-index: 100;
+    border: none;
+    background-color: #77777777;
+}
+div#poker-card div.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-image: url(../images/poker-frame.png);
+    border-image-width: 2px;
+    border-image-slice: 1 fill;
+    transform-origin: bottom;
+    transition: all 0.3s;
+}
+div#poker-card div.card div.card-letter {
+    width: 22px;
+    height: 24px;
+    top: 6px;
+    left: 5px;
+    position: absolute;
+    text-align: center;
+}
+div#poker-card div.card div.card-letter:last-of-type {
+    top: unset;
+    left: unset;
+    bottom: 6px;
+    right: 5px;
+    transform: rotate(180deg);
+}
+div#poker-card div.card div.card-suit {
+    width: 14px;
+    top: 30px;
+    left: 8px;
+    position: absolute;
+}
+div#poker-card div.card div.card-suit img {
+    width: 100%;
+}
+div#poker-card div.card div.card-suit:nth-last-of-type(2) {
+    top: unset;
+    left: unset;
+    bottom: 30px;
+    right: 8px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+div#poker-card div.card div.card-pic {
+    width: 134px;
+    height: 310px;
+    top: 20px;
+    left: 28px;
+    position: absolute;
+    border: 2px solid var(--color-darker-grey);
+    box-sizing: border-box;
+}
+div#poker-card div.card div.card-pic img {
+    width: 100%;
+    height: 306px;
+    image-rendering: initial;
+}
+
+
+div#about {
+    height: 94px;
+    margin-right: 0;
+    background-color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+div#about div {
+    width: 174px;
+    margin: 6px;
+    height: 78px;
+    background-color: var(--color-green);
+}
+div#about img, div#right div#about img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 10px;
+    top: 12px;
+    image-rendering: pixelated;
+}
+
+
+
+div#top-games {
+    height: 250px;
+}
+
+
+
+div#leaderboard {
+    height: calc(250px - var(--title-height));
+    position: relative;
+}
+div#leaderboard div.tile {
+    margin: 0;
+    width: 100%;
+    height: 36px;
+    position: relative;
+    /* top: 0; */
+    border-image: url(../images/ps5.png);
+    border-image-width: 0 6px 36px 32px ;
+    border-image-slice: 1 3 18 16 fill ;
+    box-shadow: none;
+    background-color: var(--color-blue);
+    z-index: 5;
+}
+div#leaderboard div.tile:nth-child(1) {
+    height: 100px;
+    border-image-width: 2px 6px 36px 32px ;
+    border-image-slice: 1 3 18 16 fill ;
+}
+div#leaderboard div.tile:nth-child(2) {
+    z-index: 4;
+}
+div#leaderboard div.tile:nth-child(3) {
+    z-index: 3;
+}
+div#leaderboard div.tile:nth-child(4) {
+    z-index: 2;
+}
+div#leaderboard div.tile:nth-child(5) {
+    z-index: 1;
+}
+div#leaderboard div.tile div.game-rank {
+    width: auto;
+    bottom: 4px;
+    left: 19px;
+    position: absolute;
+}
+div#leaderboard div.tile div.game-name {
+    width: 150px;
+    bottom: 4px;
+    right: 4px;
+    position: absolute;
+}

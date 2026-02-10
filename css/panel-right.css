@@ -1,0 +1,190 @@
+div#right div.tile {
+    width: 388px;
+}
+
+
+
+/* div#about {
+    width: 388px;
+    height: 100px;
+    padding: 1px 0 0 88px;
+    margin-right: 0;
+    background-color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+div#about div {
+    margin: 6px;
+    height: 82px;
+    background-color: var(--color-green);
+}
+div#about img, div#right div#about img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 10px;
+    top: 12px;
+    image-rendering: pixelated;
+} */
+
+div#game-jam div.title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+div#game-jam div.jam-controls {
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+    height: calc(var(--title-height) - 8px);
+}
+div#game-jam div.jam-controls h3 {
+    transform: initial;
+    font-size: 6px;
+}
+div#game-jam div.jam-controls div.clickable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 100%;
+}
+div#game-jam div.jam-controls div.clickable.disabled {
+    opacity: 0.25;
+    pointer-events: none;
+}
+div#game-jam div.jam-page {
+    min-width: 60px;
+    text-align: center;
+}
+div#game-jam div.content div.tile {
+    margin: 6px 0 6px 6px;
+    width: 120px;
+    height: 81px;
+    float: left;
+    background-color: var(--color-blue);
+    box-shadow: none;
+    box-sizing: border-box;
+    border: solid var(--color-blue) 2px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+div#game-jam div.content div.tile:last-child {
+    margin-bottom: 6px;
+}
+div#game-jam div.content div.tile img{
+    width: 116px;
+    height: 77px;
+}
+
+
+div#video {
+    min-height: 416px;
+}
+div#video-player {
+    height: calc(320px - var(--title-height));
+}
+div#video-select {
+    min-height: 96px;
+    background-color: var(--color-darker-grey);
+}
+div#video-select div.tile {
+    margin: 3px;
+    min-width: unset;
+    width: 90px;
+    min-height: 90px;
+    position: relative;
+    float: left;
+    box-shadow: none;
+    background-color: transparent;
+}
+div#video-select div.tile div.select-bg {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    background-image: url(../images/card.png);
+    background-size: cover;
+    /* border-image: url(../images/cd.png);
+    border-image-slice: 31 45 31 45 fill;
+    border-image-width: 64px 90px 64px 90px; */
+    z-index: 2;
+}
+div#video-select div.tile img {
+    width: 74px;
+    height: 74px;
+    left: 8px;
+    top: 2px;
+}
+div#right div#social {
+    padding: 0 0 0 88px;
+    width: 388px;
+    height: 85px;
+    background-color: var(--color-white);
+}
+div#right div#social div {
+    margin: 6px;
+    height: 69px;
+    background-color: var(--color-green);
+}
+div#right div#social img {
+    image-rendering: pixelated;
+    width: 71px;
+    height: 71px;
+    left: 10px;
+    top: 4px;
+}
+div#right div#code {
+    min-height: 400px;
+    position: sticky;
+    top: 12px;
+}
+div#right div#code-editor {
+    min-height: calc(400px - var(--title-height));
+    background-color: var(--color-white);
+    position: relative;
+}
+div#right div#code-editor div#editor {
+    height: 350px;
+}
+div#right div#code-editor div#control {
+    /* border-top: solid 1px var(--color-dark-grey); */
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--color-dark-grey);
+}
+div#right div#code-editor div#control div {
+    margin-left: 2px;
+}
+div#right div#code-editor div#control div:last-child {
+    margin: 6px;
+    height: 8px;
+    width: 8px;
+    left: 0;
+    position: absolute;
+    background-color: var(--color-blue);
+    border-radius: 100px;
+}
+div#right div#code-editor div#control div:last-child.red {
+    background-color: var(--color-red);
+}
+div#right div#code-editor div#control div:last-child.green {
+    background-color: var(--color-green);
+}
+div#right div#code-editor div#output {
+    height: 0;
+}
+
+.custom-highlight-running
+{
+    background-color: var(--color-blue);
+}
+.ace_editor .ace_marker-layer .custom-highlight-fail
+{
+    background-color: var(--color-red);
+}
+.custom-highlight-success
+{
+    background-color: var(--color-green);
+}

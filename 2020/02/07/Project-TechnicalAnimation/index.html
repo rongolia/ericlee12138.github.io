@@ -1,0 +1,572 @@
+<html>
+<!-- Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <title>Rongolia</title>
+
+    <!-- <link rel="shortcut icon" href="/images/ericube.svg"> -->
+
+    <!-- Base css/js for all pages -->
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/cursor.css">
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/panel-left.css">
+<link rel="stylesheet" href="/css/panel-middle.css">
+<link rel="stylesheet" href="/css/panel-right.css">
+
+
+    
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/two.min.js"></script>
+
+    
+<script src="/vendor/ace/ace.js"></script>
+<script src="/vendor/ace/theme-monokai.js"></script>
+
+    
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/editor.js"></script>
+
+
+    <!-- Page specific css/js -->
+    
+
+    
+        
+<link rel="stylesheet" href="/css/page-post.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                
+            })
+        </script>
+    
+
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <!-- Body -->
+    
+
+    <div id="container">
+
+        <!-- Navigator -->
+        <!-- <div class="group">
+    <div id="banner" class="tile border">
+    </div>
+
+    <div id="about" class="tile end border wide">
+        <img src="/images/resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div>
+</div> -->
+
+<div id="nav" class="tile border">
+    <div class="nav-link-bg">
+        <div id="nav-home" class="nav-link link heart no-frame" href="/">
+            <img src="/images/logo.png" style="
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform-origin: bottom right;
+                /* transform: scale(2); */
+            ">
+        </div>
+        <div style="display: none;">
+            <img src="/images/world.png" style="
+                position: absolute;
+                bottom: -138px;
+                right: -2px;
+            ">
+            <img src="/images/world-bg.png" style="
+                position: absolute;
+                bottom: -101px;
+                right: -2px;
+                z-index: -1;
+            ">
+        </div>
+    </div>
+
+    <div class="nav-gap"></div>
+    
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-experience" class="nav-link-bd">
+            </div>
+            <div id="nav-link-experience" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/experience">
+                    <h3>experience</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-projects" class="nav-link-bd">
+            </div>
+            <div id="nav-link-projects" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/projects">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-education" class="nav-link-bd">
+            </div>
+            <div id="nav-link-education" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/education">
+                    <h3>education</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-blogs" class="nav-link-bd">
+            </div>
+            <div id="nav-link-blogs" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/blogs">
+                    <h3>blogs</h3>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="nav-gap"></div>
+
+    <div class="nav-settings">
+        <div id="nav-setting-room" class="nav-option btn link" instruction="Game room" href="/game">
+            <img src="/images/icon-room.png">
+        </div>
+        <div id="nav-setting-light" class="nav-option btn" instruction="Toggle light">
+            <img src="/images/icon-light.png">
+        </div>
+        <div id="nav-setting-music" class="nav-option btn" instruction="Toggle music">
+            <img src="/images/icon-music.png">
+        </div>
+        <div id="nav-setting-cat" class="nav-option btn no-frame heart">
+            <img id="cat" src="/images/icon-meow.gif">
+            <img src="/images/icon-toy.png">
+        </div>
+    </div>
+    <div id="load-mask" style="
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #f1efca;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    "></div>
+</div>
+
+        <!-- Body -->
+         <div class="body">
+            <div id="left" class="group">
+    <div id="poker" class="tile">
+        <div id="poker-card" class="content no-title no-frame heart">
+            
+            
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-1.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter spade"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-pic"><img src="/images/me-2.png"></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-letter spade"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-pic"><img src="/images/me-3.png"></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-4.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-0.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-5.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>Q</h3></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div id="about" class="tile end border">
+        <div class="link clickable" href="/files/resume.pdf"><h3>View Resume</h3></div>
+    </div>
+
+    
+        
+    
+
+    <!-- <div id="top-games" class="tile">
+        <div class="title">
+            <h3>Top Games</h3>
+        </div>
+        <div id="leaderboard" class="content">
+            
+            
+                <div class="tile link" href="">
+                    <div class="game-img"></div>
+                    <div class="game-rank"></div>
+                    <div class="game-name"></div>
+                </div>
+            
+        </div>
+    </div> -->
+</div>
+
+<div id="middle" class="group">
+    <div id="main" class="tile">
+        <div class="title">
+            <h3>Home</h3>
+        </div>
+        <div id="main-content" class="content">
+            
+
+    
+<iframe width="598" height="400" src="https://www.youtube.com/embed/kNO2yru0e9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<div id="post-content" class="tile wide text">
+    <div class="tile-content text">
+        <h1>Technical Animation Projects</h1>
+
+        
+            
+        
+
+        <p><img src="/images/proj-ta.png"></p>
+<h2><span id="spring-mass-cloth-simulation">Spring-Mass Cloth simulation</span></h2><div class="video-container"><iframe src="https://www.youtube.com/embed/UlKflaqgb5w" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p>A piece of cloth can be considered as a grid of particles and several springs that connect different particles. Springs act as a constraint on distance: applying a force to push away objects that are too close, or applying tension between objects that are too far. For this project, I created cloth that consists of mass nodes connected by springs and dampers and explore the effect of different stiffness and damping settings on simulation speed, stability and cloth appearance.</p>
+<h3><span id="techniques">Techniques</span></h3><p><strong>Particle</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Particle</span>&#123;<br><span class="hljs-keyword">public</span>:<br>    Vector3f m_Position;<br>    Vector3f m_Velocity;<br>    Vector3f m_ForceAccumulator;<br>    <span class="hljs-type">float</span> m_Mass;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<p><strong>Spring Force</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringForce</span> : <span class="hljs-keyword">public</span> Force &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-type">void</span> <span class="hljs-title">apply_force</span><span class="hljs-params">()</span></span>;<br><span class="hljs-keyword">private</span>:<br>    Particle *<span class="hljs-type">const</span> m_p1; <span class="hljs-comment">// particle1</span><br>    Particle *<span class="hljs-type">const</span> m_p2; <span class="hljs-comment">// particle2</span><br>    <span class="hljs-type">double</span> <span class="hljs-type">const</span> m_dist;  <span class="hljs-comment">// rest length</span><br>    <span class="hljs-type">double</span> <span class="hljs-type">const</span> m_ks, m_kd; <span class="hljs-comment">// spring constants</span><br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<p>To apply force to the two particles, we can use the equation<br>$$<br>f_1&#x3D;-[k_s(||p_1-p_2||-l_0)+k_d\cdot\frac{(v_1-v_2)\cdot(p_1-p_2)}{||p_1-p_2||}]\cdot\frac{p_1-p_2}{||p_1-p_2||}\<br>f_2 &#x3D; -f_1<br>$$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-comment">// Compute and apply forcce to the two particles</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">SpringForce::apply_force</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">float</span> norm = <span class="hljs-built_in">L2Norm</span>(m_p1-&gt;m_Position - m_p2-&gt;m_Position);<br>    <span class="hljs-type">float</span> product = <span class="hljs-built_in">DotProduct</span>(<br>        m_p1-&gt;m_Velocity - m_p2-&gt;m_Velocity,<br>        m_p1-&gt;m_Position - m_p2-&gt;m_Position<br>    );<br><br>    Vector3f force = -(m_ks * (norm - m_dist) + m_kd * (product / norm))<br>      	* (m_p1-&gt;m_Position - m_p2-&gt;m_Position) / norm;<br><br>    m_p1-&gt;m_ForceAccumulator += force;<br>    m_p2-&gt;m_ForceAccumulator += -force;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>Cloth</strong></p>
+<p>First, a piece of cloth should be formed by creating a grid of particles.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs c++">Cloth::<span class="hljs-built_in">Cloth</span>() &#123;<br>	<span class="hljs-comment">// ...</span><br>	<span class="hljs-comment">// Create a grid of particles to form a piece of cloth</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; width; i++) &#123;<br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; width; j++) &#123;<br>			Vector3f pos = center;<br>			pos.x += i * offset;<br>			pos.z += j * offset;<br>			pVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Particle</span>(pos));<br>		&#125;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Then, particles should be connected to each other by spring-dampers. There are three types of spring-dampers:</p>
+<ul>
+<li>stretch springs <em>(also known as structural springs)</em></li>
+<li>shear springs</li>
+<li>bend springs</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">// Stretch springs</span><br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; width; i++) &#123;<br>    <span class="hljs-keyword">for</span>	 (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; width; j++) &#123;<br>        Particle *current = pVector[i * width + j];<br>        <span class="hljs-keyword">if</span> (i &lt; width - <span class="hljs-number">1</span>) &#123;<br>            Particle *bottom = pVector[(i + <span class="hljs-number">1</span>) * width + j];<br>            fVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">SpringForce</span>(current, bottom, dist, ks, kd));<br>        &#125;<br><br>        <span class="hljs-keyword">if</span> (j &lt; width - <span class="hljs-number">1</span>) &#123;<br>            Particle *right = pVector[i * width + j + <span class="hljs-number">1</span>];<br>            fVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">SpringForce</span>(current, right, dist, ks, kd));<br>        &#125;<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">// Shear springs</span><br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; width; i++) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; width; j++) &#123;<br>        Particle *current = pVector[i * width + j];<br>        <span class="hljs-keyword">if</span> (i &lt; width - <span class="hljs-number">1</span> &amp;&amp; j &lt; width - <span class="hljs-number">1</span>) &#123;<br>            Particle *right_bottom = pVector[(i + <span class="hljs-number">1</span>) * width + j + <span class="hljs-number">1</span>];<br>            fVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">SpringForce</span>(current, right_bottom, dist * <span class="hljs-built_in">sqrt</span>(<span class="hljs-number">2</span>), ks, kd));<br>      	&#125;<br><br>        <span class="hljs-keyword">if</span> (i &lt; width - <span class="hljs-number">1</span> &amp;&amp; j &gt; <span class="hljs-number">0</span>) &#123;<br>            Particle *left_bottom = pVector[(i + <span class="hljs-number">1</span>) * width + j - <span class="hljs-number">1</span>];<br>            fVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">SpringForce</span>(current, left_bottom, dist * <span class="hljs-built_in">sqrt</span>(<span class="hljs-number">2</span>), ks, kd));<br>        &#125;<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">// Bend springs</span><br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; width; i++) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; width; j++) &#123;<br>        Particle *current = pVector[i * width + j];<br>        <span class="hljs-keyword">if</span> (i &lt; width - <span class="hljs-number">2</span>) &#123;<br>            Particle *bottom = pVector[(i + <span class="hljs-number">2</span>) * width + j];<br>            fVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">SpringForce</span>(current, bottom, dist * <span class="hljs-number">2</span>, ks, kd));<br>        &#125;<br><br>        <span class="hljs-keyword">if</span> (j &lt; width - <span class="hljs-number">2</span>) &#123;<br>            Particle *right = pVector[i * width + j + <span class="hljs-number">2</span>];<br>            fVector.<span class="hljs-built_in">push_back</span>(<span class="hljs-keyword">new</span> <span class="hljs-built_in">SpringForce</span>(current, right, dist * <span class="hljs-number">2</span>, ks, kd));<br>        &#125;<br>    &#125;<br>&#125;	<br></code></pre></td></tr></table></figure>
+
+<p>Finally, the cloth is simulated and updated frame by frame using explicit euler method. </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">Cloth::simulation_step</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-comment">// Clear force accumulators for all the particles</span><br>  	<span class="hljs-comment">// And add gravity to all of them </span><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; pVector.<span class="hljs-built_in">size</span>(); i++) &#123;<br>        pVector[i]-&gt;<span class="hljs-built_in">clear_force</span>();<br>        pVector[i]-&gt;<span class="hljs-built_in">apply_force</span>();<br>    &#125;<br><br>    <span class="hljs-comment">// Apply sprinf forces to all the particles</span><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; fVector.<span class="hljs-built_in">size</span>(); i++) &#123;<br>      	fVector[i]-&gt;<span class="hljs-built_in">apply_force</span>();<br>    &#125;<br><br>    <span class="hljs-comment">// Implement hard constraints forces</span><br>    <span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> fixedParticleIndex[] = &#123;<br>        <span class="hljs-number">0</span>,<br>        width - <span class="hljs-number">1</span>,<br>        (width - <span class="hljs-number">1</span>) * width,<br>        width * width - <span class="hljs-number">1</span>,<br>    &#125;;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">sizeof</span>(fixedParticleIndex) / <span class="hljs-number">4</span>; i++) &#123;<br>      	pVector[fixedParticleIndex[i]]-&gt;<span class="hljs-built_in">clear_force</span>();<br>    &#125;<br><br>    <span class="hljs-comment">// Handle integration</span><br>    <span class="hljs-built_in">euler_step</span>();<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="integrators">Integrators</span></h2><div class="video-container"><iframe src="https://www.youtube.com/embed/RixukI_xPhY" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p>Intergration is one key step of simulation. There are different types of integration techniques that have different effect on simulation speed and stability. For this project, I applied different integrators on the spring-mass cloth simulation implemented before and compared the difference. </p>
+<p><strong>Explicit Euler</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">Cloth::euler_step</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; pVector.<span class="hljs-built_in">size</span>(); i++) &#123;<br>        pVector[i]-&gt;m_Position += dt * pVector[i]-&gt;m_Velocity;<br>        pVector[i]-&gt;m_Velocity = DAMP * pVector[i]-&gt;m_Velocity<br>          + dt * pVector[i]-&gt;m_ForceAccumulator / pVector[i]-&gt;m_Mass;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>Semi-implicit Euler &#x2F; Symplectic Euler</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">Cloth::symplectic_step</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; pVector.<span class="hljs-built_in">size</span>(); i++) &#123;<br>        pVector[i]-&gt;m_Velocity = DAMP * pVector[i]-&gt;m_Velocity + dt * pVector[i]-&gt;m_ForceAccumulator / pVector[i]-&gt;m_Mass;<br>        pVector[i]-&gt;m_Position += dt * pVector[i]-&gt;m_Velocity;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>Verlet</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">Cloth::verlet_step</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; pVector.<span class="hljs-built_in">size</span>(); i++) &#123;<br>        Vector3f temp = <span class="hljs-built_in">make_vector</span>&lt;<span class="hljs-type">float</span>&gt;(pVector[i]-&gt;m_Position);<br>        pVector[i]-&gt;m_Position = pVector[i]-&gt;m_Position + DAMP * (pVector[i]-&gt;m_Position - pVector[i]-&gt;m_PreviousPos) +<br>        (pVector[i]-&gt;m_ForceAccumulator / pVector[i]-&gt;m_Mass) * dt * dt;<br>        pVector[i]-&gt;m_PreviousPos  = temp;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>RK4</strong></p>
+<p><a target="_blank" rel="noopener" href="https://gafferongames.com/post/integration_basics/">https://gafferongames.com/post/integration_basics/</a></p>
+<h4><span id></span></h4><h2><span id="motion-capture-editing">Motion Capture Editing</span></h2><div class="video-container"><iframe src="https://www.youtube.com/embed/vp-VpVOX4Bc" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p>Very detailed motion data can be obtained from motion capture, after which motion edting and filtering is common and important.  In this project, I created three kinds of edits of there walk cycles in ASF&#x2F;AMC format, making  exaggerting, damping and cartoon effects.</p>
+<p><strong>File parsing</strong></p>
+<p>The AMCViewer already provides all the functions that parse data from the ASF&#x2F;AMC files. ASF file contains basic information of the skeleton, including mass, unit length, skeleton hierarchy, etc.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">// mass, unit length, unit of angle <br>:units<br>  mass 1.0<br>  length 1.0<br>  angle deg<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">// info of root and the first element of the bone list<br>// dof, position, orientation, etc<br>:root<br>   order TX TY TZ RX RY RZ<br>   axis XYZ<br>   position 0 0 0  <br>   orientation 0 0 0 <br>:bonedata<br>  begin<br>     id 1 <br>     name lhipjoint<br>     direction 0.678412 -0.646833 0.348374 <br>     length 2.5146 <br>     axis 0 0 0  XYZ<br>  end<br>...<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">// hierarchy<br>// the first one is the parent joint, the others are children joints that are attached to it<br>:hierarchy<br>  begin<br>    root lhipjoint rhipjoint lowerback<br>    lhipjoint lfemur<br>    lfemur ltibia<br>    ...<br>  end<br></code></pre></td></tr></table></figure>
+
+<p><strong>Data retreiving</strong></p>
+<p>The <code>Library::init()</code> function scans the given directory for AMC&#x2F;ASF files and loads them into <code>data</code>, which is wrapped into classes like <code>Library::Motion</code>, <code>Character::Pose </code>, <code>Character::Angles</code>. The basic data retreiving process is shown as the following.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> index = <span class="hljs-number">0</span>; index &lt; Library::<span class="hljs-built_in">motion_count</span>(); index++) &#123;<br>    <span class="hljs-comment">// Retreive all the motion from the file</span><br>    Motion &amp; motion = Library::<span class="hljs-built_in">motion_nonconst</span>(index);<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; motion.<span class="hljs-built_in">frames</span>(); j++) &#123;<br>        Character::Pose pose;<br>        Character::Angles angles;<br><br>        <span class="hljs-comment">// Retreive pose and angle data</span><br>        motion.<span class="hljs-built_in">get_pose</span>(j, pose);<br>        pose.<span class="hljs-built_in">to_angles</span>(angles);<br><br>        <span class="hljs-comment">// Calculate new angles by applying some motion filters</span><br>        Character::Angles new_angles = Character::<span class="hljs-built_in">Angles</span>(angles);<br>        <span class="hljs-comment">// ...</span><br><br>        <span class="hljs-comment">// Set new values to the angles</span><br>        motion.<span class="hljs-built_in">set_angles</span>(j, new_angles);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>Motion Filter</strong></p>
+<p>I implemented three kinds of motion filters - scalar filter, Gaussian filter and cartoon filter (which seems to have some problem and doesn’t work).</p>
+<ul>
+<li><p>Scalar</p>
+<p>Scalar exaggeration can be considered as a filter where only the middle number is non-zero. As shown in the video, scalar filter usually exaggerate the motion when the amplitude is greater than one.</p>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function">vector&lt;<span class="hljs-type">double</span>&gt; <span class="hljs-title">create_scalar_filter</span><span class="hljs-params">(<span class="hljs-type">int</span> radius, <span class="hljs-type">double</span> sigma)</span> </span>&#123;<br>    vector&lt;<span class="hljs-type">double</span>&gt; filter;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> x = -radius; x &lt;= radius; x++) &#123;<br>        <span class="hljs-keyword">if</span> (x == <span class="hljs-number">0</span>) filter.<span class="hljs-built_in">push_back</span>(<span class="hljs-number">1.25</span>);<br>        <span class="hljs-keyword">else</span> filter.<span class="hljs-built_in">push_back</span>(<span class="hljs-number">0</span>);<br>    &#125;<br>    <span class="hljs-keyword">return</span> filter;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>Gaussian filter</p>
+<p>Just like Gaussian filter in the image processing area, Gaussian motion filter provides a damping effect on the motion and <code>sigma</code> controls the degree of the effect. For example, when <code>sigma</code> is 5, visible damping effect can be seen; when it is 50, the whole model almost turns to the original pose.</p>
+<p><img src="/md/gaussian.png"></p>
+</li>
+<li><p>Cartoon filter</p>
+<p>I haven’t figured out yet why this filter works very much like the Gaussian filter. I guess I misunderstand the use of LOG filter. The current filter is simply the second derivative of the Gaussian filter.</p>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function">vector&lt;<span class="hljs-type">double</span>&gt; <span class="hljs-title">create_cartoon_filter</span><span class="hljs-params">(<span class="hljs-type">int</span> radius, <span class="hljs-type">double</span> sigma)</span> </span>&#123;<br>    vector&lt;<span class="hljs-type">double</span>&gt; filter;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> x = -radius; x &lt;= radius; x++) &#123;<br>        <span class="hljs-type">double</span> g = <span class="hljs-number">1</span> / (M_PI * <span class="hljs-built_in">pow</span>(sigma, <span class="hljs-number">4</span>)) * (<span class="hljs-number">1</span> - x * x / (<span class="hljs-number">2</span> * sigma * sigma)) * <span class="hljs-built_in">pow</span>(M_E, -x * x / (<span class="hljs-number">2</span> * sigma * sigma));<br>        filter.<span class="hljs-built_in">push_back</span>(g);<br>    &#125;<br><br><span class="hljs-keyword">return</span> filter;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="ccd-ik-and-fabrik">CCD IK and FABRIK</span></h2><div class="video-container"><iframe src="https://www.youtube.com/embed/kNO2yru0e9s" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p>CCD IK and FABRIK are two  approaches to implement IK. For this mini project, I created a Unity project where CCD and FABRIK are applied to a very simple skeleton. The main purpose is to go through the basic process of implementing IK.</p>
+<p><strong>Unity</strong></p>
+<p>I considered Unity as the first choice because it provides very detailed and established interfaces for manipulating position and rotation of objects and implementing interactive interface.</p>
+<p>For example, by directly controlling <code>transform.position</code> field of an <code>gameObject</code>, I can modify positions of joints and by mutiplying on <code>transform.rotation</code> , which is a <code>Quanternion</code>, rotations can be applied to bones.</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c#"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetPositionAndRotation</span> (<span class="hljs-params">Vector3 tipOrigin, Vector3 tipTarget, Vector3 rootTarget</span>)</span> &#123;<br>    bone.transform.position = (tipTarget + rootTarget) / <span class="hljs-number">2</span>;<br>        <br>    Quaternion rotation = Quaternion.FromToRotation (<br>        tipOrigin - rootTarget,<br>        tipTarget - rootTarget<br>    );<br>    bone.transform.rotation = bone.transform.rotation * rotation;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>As for user input, although Unity has a class <code>Input</code> handling common inputs like keyboard and mouse, I simply utilized Unity Scene View.</p>
+<p><img src="/md/input.png"></p>
+<p>Also, Unity provides a hierarchy of objects, so that I don’t need to calculate position for every part of a bone. Instead, I can simply calculate the position and rotation of the parent object and detail parts will change automatically.</p>
+<p><img src="/md/hierarchy.png"></p>
+
+    </div>
+</div>
+
+
+    <div id="project-archive" class="tile wide">
+        <div class="tile-title">
+            <h3>All Projects</h3>
+        </div>
+        <div class="tile-content">
+            
+            
+            
+                <div class="tile link" href="/2019/10/14/Project-EnosUmbrella/" instruction="Eno's Umbrella">
+                    <img src="/images/proj-eno.png">
+                </div>
+            
+                <div class="tile link" href="/2018/06/05/Project-Hexa/" instruction="Hexa">
+                    <img src="/images/proj-hexa.png">
+                </div>
+            
+                <div class="tile link" href="/2026/02/05/Project-BVW/" instruction="Building Virtual Worlds">
+                    <img src="/images/proj-bvw.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/07/Project-TechnicalAnimation/" instruction="Technical Animation Projects">
+                    <img src="/images/proj-ta.png">
+                </div>
+            
+                <div class="tile link" href="/2020/04/08/Project-SplineInterface/" instruction="Spline Interface for Intuitive Skinning Weight Editing">
+                    <img src="/images/proj-spline.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/21/Project-UnityEditor/" instruction="Unity Editor Extension and Tool Making">
+                    <img src="/images/proj-unityeditor.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/07/Project-LiftOffPGH/" instruction="Liftoff PGH 2020">
+                    <img src="/images/proj-liftoff.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/05/Project-LoveYourself/" instruction="Love Yourself">
+                    <img src="/images/proj-loveyourself.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Project-HighAvailability/" instruction="High Availability">
+                    <img src="/images/proj-highavailability.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Project-Letters/" instruction="Letters From The BattleField">
+                    <img src="/images/proj-letters.png">
+                </div>
+            
+                <div class="tile link" href="/2025/10/28/Project-TriggerTreat/" instruction="Trigger Treat">
+                    <img src="/images/proj-triggertreat.png">
+                </div>
+            
+                <div class="tile link" href="/2026/02/05/Project-DataReplay/" instruction="Data Replay">
+                    <img src="/images/proj-datareplay.png">
+                </div>
+            
+                <div class="tile link" href="/2019/10/18/Project-Card/" instruction="Card">
+                    <img src="/images/proj-card.png">
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right" class="group">
+    <!-- <div id="about" class="tile end border">
+        <img src="/images/icon-resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div> -->
+
+    
+    
+    <div id="video" class="tile">
+        <div class="title">
+            <h3>Videos</h3>
+        </div>
+        <div id="video-player" class="content">
+            <div id="api-player"></div>
+        </div>
+        <div id="video-select" class="content">
+            <div class="tile clickable">
+                <div class="select select-bg" select="nWryvhC41Oo" instruction="Spline Interface for Intuitive Skinning Weight Editing"></div>
+                <img src="/images/thumb-spline.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="kNO2yru0e9s" instruction="CCD IK and FABRIK"></div>
+                <img src="/images/thumb-ik.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="4JyUwbqGQyo" instruction="Hexahedron"></div>
+                <img src="/images/thumb-hexa.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="T4tKBBSb12Q" instruction="Whale You Were Here"></div>
+                <img src="/images/thumb-whale.png">
+            </div>
+        </div>
+    </div>
+    <div id="code" class="tile">
+        <div class="title">
+            <h3>Playground</h3>
+        </div>
+        <div id="code-editor" class="content">
+            <div id="editor" class="interactable"></div>
+            <div id="control">
+                <div id="run" class="btn small"><h3>Run</h3></div>
+                <div id="copy" class="btn small grey"><h3>Copy</h3></div>
+                <div id="status"></div>
+            </div>
+
+            <div id="output" class="interactable">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="group">
+    <div id="contact" class="tile border">
+        <div class="contact-link-bg">
+            <div class="btn link orange" href="mailto:rli@rongolia.com">
+                <img src="/images/icon-email.png"><h3 style="transform: translateX(20px);">Email me</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+        
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.linkedin.com/in/rongjia-li-81357919a/">
+                <img src="/images/icon-linkedin.png"><h3>LinkedIn</h3>
+            </div>
+            <div class="btn link" href="https://github.com/EricLee12138">
+                <img src="/images/icon-github.png"><h3>Github</h3>
+            </div>
+            <div class="btn link" href="https://www.etc.cmu.edu/blog/author/rongjial/">
+                <img src="/images/icon-etc.png"><h3>ETC</h3>
+            </div>
+            <div class="btn link" href="https://itch.io/profile/ericlee12138">
+                <img src="/images/icon-itch.png"><h3>Itch.io</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.youtube.com/channel/UC2NpEgeXotQdUs49Y6xDF1g">
+                <img src="/images/icon-youtube.png"><h3 style="color: red;">YouTube</h3>
+            </div>
+            <div class="btn link" href="https://www.twitch.tv/howdumbpeopleplaygames">
+                <img src="/images/icon-twitch.png"><h3 style="color: #9146FF;">Twitch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="tile">
+    <p class="no-margin">Welcome to Rongolia</p>
+    <!-- <p class="no-margin">Terms of Services | This Policy | That Policy | All Fake Policy</p> -->
+</div>
+
+    </div>
+
+    <div id="cursor">
+        <div id="cursor-instruction">
+            Instruction goes here...
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<!-- 
+[layout]
+<html>
+    [head] [/head]
+
+<body>
+    [index]
+
+    [nav] [/nav]
+
+    [body] [/body]
+
+    [footer] [/footer]
+
+    [/index]
+
+</body>
+</html>
+[/layout]
+ -->

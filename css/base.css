@@ -1,0 +1,142 @@
+:root {
+    --container-width: 1200px;
+    --tile-margin: 10px;
+    --title-height: 25px;
+
+    --color-darker-grey: #222222;
+    --color-dark-grey: #4a4a4a;
+    --color-grey: #808080;
+    --color-light-grey: #c8c8c8;
+    --color-lighter-grey: #dbdbdb;
+    --color-white: #f3f3f3;
+    --color-blue: #508ACC;
+    --color-red: #DA5C67;
+    --color-green: #3a9676;
+
+    --cursor-frame: url(../images/cursor-frame.png);
+    --cursor-line: url(../images/cursor-line.png);
+
+    --tile-border-image: url(../images/tile-border.png);
+    --tile-border-slice: 1;
+    --tile-border-width: 2px;
+
+    --title-border-image: url(../images/title.png);
+    --title-border-slice: 6 3 fill;
+    --title-border-width: 12px 6px;
+
+    --title-borderless-border-image: url(../images/title-borderless.png);
+    --title-green-borderless-border-image: url(../images/title-green-borderless.png);
+    --title-grey-borderless-border-image: url(../images/title-grey-borderless.png);
+    --title-orange-borderless-border-image: url(../images/title-orange-borderless.png);
+    --title-borderless-border-slice: 6 2 2 2 fill;
+    --title-borderless-border-width: 12px 4px 4px 4px;
+
+    --nav-link-border-slice: 18 27 18 27 fill;
+    --nav-link-border-width: 36px 54px 36px 54px;
+    --nav-link-bd-border-slice: 19 28 19 28 fill;
+    --nav-link-bd-border-width: 38px 56px 38px 56px;
+
+    --image-spade: url(../images/spade.png);
+    --image-club: url(../images/club.png);
+    --image-heart: url(../images/heart.png);
+    --image-diamond: url(../images/diamond.png);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    background-image: url(../images/web.png);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+    backdrop-filter: brightness(0.5);
+}
+
+div.body {
+    display: flex;
+}
+div.group {
+    display: flex;
+    flex-direction: column;
+}
+div.tile {
+    margin: 10px 0 0 10px;
+    min-width: 100px;
+    min-height: 25px;
+    display: inline-block;
+    background-size: cover;
+    box-shadow: -6px 6px 0 #77777777;
+    background-color: transparent;
+}
+div.tile div.title, div.tile div.content, div.tile.border
+{
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid 2px var(--color-darker-grey);
+}
+div.tile div.title
+{
+    width: 100%;
+    height: var(--title-height);
+    padding: 2px 0 4px 12px;
+    border-image: var(--title-border-image);
+    border-image-width: var(--title-border-width);
+    border-image-slice: var(--title-border-slice);
+    border-bottom: none;
+    background-color: transparent;
+}
+div.tile div.content
+{
+    width: 100%;
+    min-height: 20px;
+    border-top: none;
+    background-color: var(--color-white);
+}
+div.tile div.content.no-title {
+    border-top: solid 2px var(--color-darker-grey);
+}
+div.tile.end {
+    margin-right: 10px;
+}
+div.btn, a.btn {
+    padding: 0 10px;
+    min-width: 50px;
+    min-height: 16px;
+    position: relative;
+    display: inline-block;
+    border-image: var(--title-borderless-border-image);
+    border-image-width: var(--title-borderless-border-width);
+    border-image-slice: var(--title-borderless-border-slice);
+    overflow: hidden;
+}
+div.btn.green {
+    border-image-source: var(--title-green-borderless-border-image);
+}
+div.btn.grey {
+    border-image-source: var(--title-grey-borderless-border-image);
+}
+div.btn.orange, a.btn.orange {
+    border-image-source: var(--title-orange-borderless-border-image);
+}
+div.btn:not(.ignore):hover, .clickable:hover {
+    filter: brightness(1.15);
+}
+div.btn:not(.ignore):active, .clickable:active {
+    filter: brightness(0.9);
+}
+div.btn.small {
+    min-width: 40px;
+}
+div.btn.wide, a.btn.wide {
+    padding: 0 50px;
+}
+div.btn img {
+    width: 40px;
+    top: 5px;
+    left: 10px;
+    position: absolute;
+}

@@ -1,0 +1,757 @@
+<html>
+<!-- Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <title>Rongolia</title>
+
+    <!-- <link rel="shortcut icon" href="/images/ericube.svg"> -->
+
+    <!-- Base css/js for all pages -->
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/cursor.css">
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/panel-left.css">
+<link rel="stylesheet" href="/css/panel-middle.css">
+<link rel="stylesheet" href="/css/panel-right.css">
+
+
+    
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/two.min.js"></script>
+
+    
+<script src="/vendor/ace/ace.js"></script>
+<script src="/vendor/ace/theme-monokai.js"></script>
+
+    
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/editor.js"></script>
+
+
+    <!-- Page specific css/js -->
+    
+
+    
+        
+<link rel="stylesheet" href="/css/page-post.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                
+            })
+        </script>
+    
+
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <!-- Body -->
+    
+
+    <div id="container">
+
+        <!-- Navigator -->
+        <!-- <div class="group">
+    <div id="banner" class="tile border">
+    </div>
+
+    <div id="about" class="tile end border wide">
+        <img src="/images/resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div>
+</div> -->
+
+<div id="nav" class="tile border">
+    <div class="nav-link-bg">
+        <div id="nav-home" class="nav-link link heart no-frame" href="/">
+            <img src="/images/logo.png" style="
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform-origin: bottom right;
+                /* transform: scale(2); */
+            ">
+        </div>
+        <div style="display: none;">
+            <img src="/images/world.png" style="
+                position: absolute;
+                bottom: -138px;
+                right: -2px;
+            ">
+            <img src="/images/world-bg.png" style="
+                position: absolute;
+                bottom: -101px;
+                right: -2px;
+                z-index: -1;
+            ">
+        </div>
+    </div>
+
+    <div class="nav-gap"></div>
+    
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-experience" class="nav-link-bd">
+            </div>
+            <div id="nav-link-experience" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/experience">
+                    <h3>experience</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-projects" class="nav-link-bd">
+            </div>
+            <div id="nav-link-projects" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/projects">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-education" class="nav-link-bd">
+            </div>
+            <div id="nav-link-education" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/education">
+                    <h3>education</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-blogs" class="nav-link-bd">
+            </div>
+            <div id="nav-link-blogs" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/blogs">
+                    <h3>blogs</h3>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="nav-gap"></div>
+
+    <div class="nav-settings">
+        <div id="nav-setting-room" class="nav-option btn link" instruction="Game room" href="/game">
+            <img src="/images/icon-room.png">
+        </div>
+        <div id="nav-setting-light" class="nav-option btn" instruction="Toggle light">
+            <img src="/images/icon-light.png">
+        </div>
+        <div id="nav-setting-music" class="nav-option btn" instruction="Toggle music">
+            <img src="/images/icon-music.png">
+        </div>
+        <div id="nav-setting-cat" class="nav-option btn no-frame heart">
+            <img id="cat" src="/images/icon-meow.gif">
+            <img src="/images/icon-toy.png">
+        </div>
+    </div>
+    <div id="load-mask" style="
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #f1efca;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    "></div>
+</div>
+
+        <!-- Body -->
+         <div class="body">
+            <div id="left" class="group">
+    <div id="poker" class="tile">
+        <div id="poker-card" class="content no-title no-frame heart">
+            
+            
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-1.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter spade"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-pic"><img src="/images/me-2.png"></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-letter spade"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-pic"><img src="/images/me-3.png"></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-4.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-0.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-5.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>Q</h3></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div id="about" class="tile end border">
+        <div class="link clickable" href="/files/resume.pdf"><h3>View Resume</h3></div>
+    </div>
+
+    
+        
+            <div id="toc" class="tile">
+                <div class="title">
+                    <h3>Table Of Content</h3>
+                </div>
+                <div class="content">
+                    <!-- toc -->
+
+<ul>
+<li><a href="#command">Command</a></li>
+<li><a href="#flyweight">Flyweight</a></li>
+<li><a href="#observer">Observer</a></li>
+<li><a href="#prototype">Prototype</a></li>
+<li><a href="#singleton">Singleton</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#double-buffer">Double Buffer</a></li>
+<li><a href="#game-loop">Game Loop</a></li>
+<li><a href="#update">Update</a></li>
+<li><a href="#bytecode">Bytecode</a></li>
+<li><a href="#subclass-sandbox">Subclass Sandbox</a></li>
+</ul>
+<!-- tocstop -->
+                </div>
+            </div>
+        
+    
+
+    <!-- <div id="top-games" class="tile">
+        <div class="title">
+            <h3>Top Games</h3>
+        </div>
+        <div id="leaderboard" class="content">
+            
+            
+                <div class="tile link" href="">
+                    <div class="game-img"></div>
+                    <div class="game-rank"></div>
+                    <div class="game-name"></div>
+                </div>
+            
+        </div>
+    </div> -->
+</div>
+
+<div id="middle" class="group">
+    <div id="main" class="tile">
+        <div class="title">
+            <h3>Home</h3>
+        </div>
+        <div id="main-content" class="content">
+            
+
+    
+
+<div id="post-content" class="tile wide text">
+    <div class="tile-content text">
+        <h1>Notes: Game Programming Pattern</h1>
+
+        
+            
+        
+
+        
+
+<h2><span id="command">Command</span></h2><h2><span id="flyweight">Flyweight</span></h2><h2><span id="observer">Observer</span></h2><ul>
+<li>The pattern behind MVC</li>
+<li>Pretty much the same as Event System</li>
+<li>In highly threaded engine, do asynchronous communication with <strong>Event Queue</strong></li>
+<li>Dynamic allocations take time<ul>
+<li>Linked observers<ul>
+<li><code>SUBJECT</code> and <code>OBSERVER</code> should be friends</li>
+<li><code>AddObserver</code> to the end adds complexity, while <code>AddObserver</code> to the front has one side effect, where newly added observer will get notified first</li>
+<li><code>RemoveObserver</code> usually requires special work for removing the first one. Doing pointer to pointer can overcome this</li>
+<li>One observer can only observer one subject</li>
+</ul>
+</li>
+<li>Linked list with pointer to observers</li>
+<li><strong>Object Pool</strong>?</li>
+</ul>
+</li>
+<li>Remaining problems<ul>
+<li>Destroying subjects&#x2F;observers<ul>
+<li>It’s an observer’s job to unregistered itself when it gets deleted</li>
+<li>Have an subject send one final “dying” notification before getting destroyed</li>
+<li>Or make observers automatically unregister themselves from every subject when they get destroyed. Then each observer needs a list of all the subjects → pointers going both directions</li>
+</ul>
+</li>
+<li>Garbage collectors<ul>
+<li>The lapsed listener problem</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If you often need to think about both sides of some communication in order to understand a part of the program, don’t use the Observer pattern to express that linkage. Prefer something more explicit.</li>
+<li>The observer pattern is a great way to let those mostly unrelated lumps talk to each other without them merging into one big lump. It’s less useful within a single lump of code dedicated to one feature or aspect.</li>
+<li>Even in C++, I would tend toward a system that let you register member function pointers as observers instead of instances of some Observer interface.</li>
+</ul>
+<h2><span id="prototype">Prototype</span></h2><table>
+<thead>
+<tr>
+<th>Different monsters &amp; monster spawners</th>
+<th>Lots of classes and duplication</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>→ Abstract clone function in base class and handle spawning in child classes</td>
+<td>Also cloning states, yet still lots of classes</td>
+</tr>
+<tr>
+<td>→ Pass spawn function, template</td>
+<td>No spawner class</td>
+</tr>
+</tbody></table>
+<ul>
+<li>In most OOP, state is contained in the instance, behavior is contained in the class (v-table)</li>
+<li>Self → JavaScript</li>
+<li>Prototype is useful for data modeling<ul>
+<li>No need for an abstract prototype, just pick the one that’s the simplest</li>
+</ul>
+</li>
+</ul>
+<h2><span id="singleton">Singleton</span></h2><p>To solve two problems - restricting a class to one instance &amp; global access point</p>
+<h3><span id="why-we-use-it">Why we use it</span></h3><ul>
+<li>Does not create the instance till needed</li>
+<li>Initialized at runtime</li>
+<li>Can be subclassed</li>
+</ul>
+<h3><span id="why-we-regret-using-it">Why we regret using it</span></h3><ul>
+<li>Global variable<ul>
+<li>Hard to debug - anyone can touch the global state</li>
+<li>Encourage coupling - anyone can access it can couple it into their code</li>
+<li>Not concurrency friendly</li>
+</ul>
+</li>
+<li>Sometimes I only have one of the two problems</li>
+<li>Lazy initialization takes control away</li>
+</ul>
+<h3><span id="what-to-do">What to do</span></h3><ul>
+<li>Remove the class if possible - OOP is about letting objects take care of themselves</li>
+<li>Make access easy but not global<ul>
+<li>Pass the object in</li>
+<li>Get it from there base class</li>
+<li>Get it from something already global</li>
+<li><strong>Service Locator</strong></li>
+</ul>
+</li>
+</ul>
+<h2><span id="state">State</span></h2><p>Error prone - complex branching and mutable state</p>
+<h3><span id="fsm">FSM</span></h3><ul>
+<li>Fixed set of states</li>
+<li>In one state at a time</li>
+<li>External inputs&#x2F;events</li>
+<li>Each state has a set of transitions</li>
+</ul>
+<p>State interface → state classes → delegate</p>
+<p>State objects - static or instantiated</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">Heroine::handleInput</span><span class="hljs-params">(Input input)</span></span><br><span class="hljs-function"></span>&#123;<br>  HeroineState* state = state_-&gt;<span class="hljs-built_in">handleInput</span>(<br>      *<span class="hljs-keyword">this</span>, input);<br>  <span class="hljs-keyword">if</span> (state != <span class="hljs-literal">NULL</span>)<br>  &#123;<br>    <span class="hljs-keyword">delete</span> state_;<br>    state_ = state;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function">HeroineState* <span class="hljs-title">StandingState::handleInput</span><span class="hljs-params">(Heroine&amp; heroine, Input input)</span></span><br><span class="hljs-function"></span>&#123;<br>  <span class="hljs-keyword">if</span> (input == PRESS_DOWN)<br>  &#123;<br>    <span class="hljs-comment">// Other code...</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">DuckingState</span>();<br>  &#125;<br>  <span class="hljs-comment">// Stay in this state.</span><br>  <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Exit and enter actions - let the switching-to state instead of the switching-from state handle graphics changes</p>
+<h3><span id="concurrent-state-machine">Concurrent state machine</span></h3><p>Use two separate FSMs for two different sets of states</p>
+<p>When the two FSMs are interacting</p>
+<ul>
+<li>Use some if statement</li>
+<li>Have one state machine consume the input</li>
+</ul>
+<h3><span id="hierarchical-state-machine">Hierarchical state machine</span></h3><p>Event → sub state → super state → …</p>
+<p>Implement - class inheritance or a stack of states</p>
+<h3><span id="pushdown-automata">Pushdown automata</span></h3><p>History states</p>
+<h3><span id="modern-behavior-tree-amp-planning-systems">Modern: behavior tree &amp; planning systems</span></h3><h2><span id="double-buffer">Double Buffer</span></h2><h3><span id="when-to-use">When to use</span></h3><ul>
+<li>State being modified incrementally</li>
+<li>State possibly being accessed during modification</li>
+<li>Want to prevent the accessing code from seeing the work in progress</li>
+<li>Want to read the state without having to wait</li>
+</ul>
+<h3><span id="remember">Remember</span></h3><ul>
+<li>Swapping buffers takes time - pointless if swapping takes more time than modifying</li>
+<li>Two buffers - memory usage</li>
+</ul>
+<h3><span id="how-to-swap-buffers">How to swap buffers</span></h3><ul>
+<li>Swap pointers or references<ul>
+<li>Fast</li>
+<li>External code cannot store persistent pointers to the buffers - main limitation, can be an issue if the buffers are expected to be at a fixed location</li>
+<li>Existing data on the buffer are from two frames ago - can be an issue if we need to reuse data from last frame, e.g. motion blur</li>
+</ul>
+</li>
+<li>Copy data<ul>
+<li>Existing data on the buffer are one frame old</li>
+<li>Swapping can take a while, unless the state is a single flag</li>
+</ul>
+</li>
+</ul>
+<h2><span id="game-loop">Game Loop</span></h2><h3><span id="simplest">Simplest</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>)<br>&#123;<br>        <span class="hljs-built_in">ProcessInput</span>();<br>        <span class="hljs-built_in">Update</span>();<br>        <span class="hljs-built_in">Render</span>();<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>No control over game speed, fast on fast machine, crawl on slow machine</p>
+<h3><span id="sleep">Sleep</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>)<br>&#123;<br>        <span class="hljs-type">double</span> StartTime = <span class="hljs-built_in">GetCurrentTime</span>();<br>        <br>        <span class="hljs-built_in">ProcessInput</span>();<br>        <span class="hljs-built_in">Update</span>();<br>        <span class="hljs-built_in">Render</span>();<br>        <span class="hljs-built_in">Sleep</span>(StartTime + MS_PER_FRAME - <span class="hljs-built_in">GetCurrentTime</span>());<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Make sure the game doesn’t run too fast, doesn’t help when it’s slow</p>
+<h3><span id="a-bit-more-sophisticated-solution">A bit more sophisticated solution</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">double</span> LastTime = <span class="hljs-built_in">GetCurrentTime</span>();<br><br><span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>)<br>&#123;<br>        <span class="hljs-type">double</span> CurrentTime = <span class="hljs-built_in">GetCurrentTime</span>();<br>        <span class="hljs-type">double</span> ElapsedTime = CurrentTime - LastTime;<br>        <br>        <span class="hljs-built_in">ProcessInput</span>();<br>        <span class="hljs-built_in">Update</span>(ElapsedTime);<br>        <span class="hljs-built_in">Render</span>();<br>        <br>        LastTime = CurrentTime;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Pass in how much real time has passed</p>
+<p>Consistent frame rate</p>
+<p>Faster machine gets smoother gameplay</p>
+<p>Non-deterministic and unstable, different frame rates can have different game results, physics gets unstable</p>
+<h3><span id="rendering-doesnt-care-about-elapsed-time">Rendering doesn’t care about elapsed time</span></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">double</span> LastTime = <span class="hljs-built_in">GetCurrentTime</span>();<br><span class="hljs-type">double</span> Lag = <span class="hljs-number">0.0</span>;<br><br><span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>)<br>&#123;<br>        <span class="hljs-type">double</span> CurrentTime = <span class="hljs-built_in">GetCurrentTime</span>();<br>        <span class="hljs-type">double</span> ElapsedTime = CurrentTime - LastTime;<br>        Lag += ElapsedTime;<br>        <br>        <span class="hljs-built_in">ProcessInput</span>();<br>        <span class="hljs-keyword">while</span> (Lag &gt;= MS_PER_UPDATE)<br>        &#123;<br>                <span class="hljs-built_in">Update</span>();<br>                Lag -= MS_PER_UPDATE;<br>        &#125;<br>        <span class="hljs-built_in">Render</span>();<br>        <br>        LastTime = CurrentTime;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><img src="/md/image.png" alt="image.png"></p>
+<p><code>MS_PER_UPDATE</code> should be pretty short, but not too short or it won’t catch up</p>
+<p>Yank rendering out of the update loop to free up some CPU time</p>
+<h3><span id="rendering-right-between-two-frames">Rendering right between two frames</span></h3><p><img src="/md/image%201.png" alt="image.png"></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-built_in">Render</span>(Lag / MS_PER_UPDATE);<br></code></pre></td></tr></table></figure>
+
+<p>Extrapolate based on game object position and velocity, it can be wrong but less noticeable than the stuttering</p>
+<h2><span id="update">Update</span></h2><h3><span id="splitting-code-into-frames-is-more-complex-but-almost-always-necessary">Splitting code into frames is more complex but almost always necessary</span></h3><h3><span id="have-to-store-data-to-resume">Have to store data to resume</span></h3><ul>
+<li><strong>State</strong> might help</li>
+</ul>
+<h3><span id="all-objects-simulate-but-not-truly-concurrent">All objects simulate but not truly concurrent</span></h3><ul>
+<li>Orders matter, former objects see latter objects’ old state, latter objects see former objects’ new state</li>
+</ul>
+<h3><span id="be-careful-modifying-the-object-list">Be careful modifying the object list</span></h3><ul>
+<li>Adding a new object will have it update during the same frame it spawns - cache the number of objects to avoid</li>
+<li>Removing an object can cause skipping objects<ul>
+<li>Mark them dead and remove them when done walking the list</li>
+<li>Walk the list backwards</li>
+</ul>
+</li>
+</ul>
+<h3><span id="entity-class">Entity class</span></h3><ul>
+<li>Class inheritance - terrible, use <strong>Component</strong></li>
+<li>Passing elapsed time</li>
+</ul>
+<h3><span id="delegate-class">Delegate class</span></h3><ul>
+<li>Used in <strong>State</strong> and <strong>Type Object</strong></li>
+</ul>
+<h3><span id="dormant-objects">Dormant objects</span></h3><ul>
+<li>Single collection containing inactive objects - waste time on checking flag or calling an empty method</li>
+<li>Separate collection - extra memory and need to keep collections in sync</li>
+</ul>
+<h2><span id="bytecode">Bytecode</span></h2><h3><span id="a-small-virtual-machine">A small virtual machine</span></h3><h3><span id="structure">Structure</span></h3><ul>
+<li>APIs</li>
+<li>Instruction set - one byte hence the name</li>
+<li>Stack machine</li>
+</ul>
+<h3><span id="literal-instruction">Literal instruction</span></h3><p>For disambiguation when reading constants</p>
+<p>Other approach - constant pool</p>
+<h3><span id="stack-based-or-register-based">Stack-based or register-based</span></h3><p>Stack-based <code>PUSH 2, PUSH 3, ADD</code></p>
+<ul>
+<li>Instructions are small, arguments are always on top of the stack</li>
+<li>Code generation is simpler</li>
+<li>There will be more instructions</li>
+</ul>
+<p>Register-based <code>ADD R0, R1, R2</code></p>
+<ul>
+<li>Instructions are large, lots of arguments</li>
+<li>There will be fewer instructions</li>
+</ul>
+<h3><span id="what-instructions">What instructions</span></h3><ul>
+<li>External primitives, actual game behaviors</li>
+<li>Internal primitives, manipulate internal values, e.g. literal, arithmetic, comparison, etc.</li>
+<li>Control flow, conditions or loops, similar to <code>goto</code></li>
+<li>Abstraction, reusable callable procedures, return stack</li>
+</ul>
+<h3><span id="what-values">What values</span></h3><ul>
+<li>Single data type<ul>
+<li>Simple, both good and bad</li>
+</ul>
+</li>
+<li>Tagged union, enum + union <em>→ most common</em><ul>
+<li>Values know their type</li>
+<li>More memory</li>
+</ul>
+</li>
+<li>Untagged union<ul>
+<li>Compact, fast</li>
+<li>Unsafe, misinterpreting a value can cause crash</li>
+</ul>
+</li>
+<li>Interface, class and subclasses<ul>
+<li>Open-ended, easy to define new value type</li>
+<li>Object-oriented</li>
+<li>Redundant, a separate class for each value type</li>
+<li>Inefficient</li>
+</ul>
+</li>
+</ul>
+<h3><span id="what-scripts">What scripts</span></h3><ul>
+<li>Text-based<ul>
+<li>Syntax required</li>
+<li>Parser required</li>
+<li>Error handling required</li>
+<li>Not friendly to untechnical users</li>
+</ul>
+</li>
+<li>Graphical tool<ul>
+<li>GUI required</li>
+<li>Fewer error cases</li>
+<li>Hard portability across systems</li>
+</ul>
+</li>
+</ul>
+<h2><span id="subclass-sandbox">Subclass Sandbox</span></h2><h3><span id="lots-of-subclasses">Lots of subclasses</span></h3><blockquote>
+<p>When you find yourself with a lot of subclasses, it often means a data-driven approach it better.</p>
+</blockquote>
+<ul>
+<li>Redundant code</li>
+<li>Game engine coupled to the classes and changes to outside systems will get the classes broken</li>
+<li>Hard to define invariants</li>
+</ul>
+<h3><span id="pattern">Pattern</span></h3><p>Base class &#x3D; abstract sandbox method + provided operations</p>
+<p>Subclasses &#x3D; implement sandbox method using the provided operations</p>
+<h3><span id="when-to-use">When to use</span></h3><ul>
+<li>Base class and a number of subclasses</li>
+<li>Base class can provide all operations needed by subclasses</li>
+<li>Behavioral overlap among subclasses</li>
+<li>Minimize coupling between subclasses and other systems</li>
+</ul>
+<p>If the base class is turning into a big code stew, consider pulling some provided operations into separate classes, with <strong>Component</strong></p>
+<h3><span id="what-provided-operations">What provided operations</span></h3><p>NO provided operations, subclasses call into outside systems ↔ EVERY operation needed, subclasses are ONLY coupled to the base class</p>
+<ul>
+<li><p>A provided operation only used by very few subclasses - not very beneficial, let special case subclasses call into external systems</p>
+</li>
+<li><p>A method not modifying any state is “safe” coupling. Methods that do modify state are good candidates for provided operations</p>
+<blockquote>
+<p>Even just accessing data can cause problem, e.g. in a multi-threaded systems, reading something while it’s being modified</p>
+</blockquote>
+</li>
+<li><p>A provided operation only forwards a call to external systems - may be simpler to directly call, but it can still be useful</p>
+</li>
+</ul>
+<h3><span id="how-are-operations-provided">How are operations provided</span></h3><p>Directly - lots of methods</p>
+<p>Indirectly - helper classes, fewer methods, help classes are easier to maintain, lower the coupling between the base class and external systems</p>
+<h3><span id="how-does-base-class-get-state">How does base class get state</span></h3><ul>
+<li>Pass through constructor - exposing the hidden state to subclasses</li>
+<li><code>ctor</code> + <code>init</code> - need to make sure <code>init</code> is called</li>
+<li>Make the state static - works for singleton systems, can have good and bad of singleton</li>
+<li><strong>Service Locator</strong></li>
+</ul>
+<h3><span id="update-method-is-often-also-a-sandbox-method-subclass-sandbox-is-a-role-reversal-of-template-method">Update method is often also a sandbox method. Subclass Sandbox is a role reversal of Template Method</span></h3>
+    </div>
+</div>
+
+
+    <div id="blog-archive" class="tile wide">
+        <div class="tile-title">
+            <h3>All Blogs</h3>
+        </div>
+        <div class="tile-content">
+            
+            
+            
+                <div class="tile link" href="/2025/04/16/Blog-CPP/" instruction="Notes: C++">
+                    <img src="/images/blog-cpp.png">
+                </div>
+            
+                <div class="tile link" href="/2025/04/16/Blog-GPP/" instruction="Notes: Game Programming Pattern">
+                    <img src="/images/blog-gpp.png">
+                </div>
+            
+                <div class="tile link" href="/2025/04/16/Blog-Unity/" instruction="Notes: Unity">
+                    <img src="/images/blog-unity.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Blog-Unreal/" instruction="Notes: Unreal Engine">
+                    <img src="/images/blog-ue.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/15/Blog-TechnicalAnimation/" instruction="Technical Animation Blogs">
+                    <img src="/images/blog-ta.png">
+                </div>
+            
+                <div class="tile link" href="/2019/10/16/Blog-LeetCode/" instruction="LeetCode">
+                    <img src="/images/blog-leetcode.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/16/Blog-UnityShader/" instruction="C# and Shader for the Unity Engine">
+                    <img src="/images/blog-shader.png">
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right" class="group">
+    <!-- <div id="about" class="tile end border">
+        <img src="/images/icon-resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div> -->
+
+    
+    
+    <div id="video" class="tile">
+        <div class="title">
+            <h3>Videos</h3>
+        </div>
+        <div id="video-player" class="content">
+            <div id="api-player"></div>
+        </div>
+        <div id="video-select" class="content">
+            <div class="tile clickable">
+                <div class="select select-bg" select="nWryvhC41Oo" instruction="Spline Interface for Intuitive Skinning Weight Editing"></div>
+                <img src="/images/thumb-spline.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="kNO2yru0e9s" instruction="CCD IK and FABRIK"></div>
+                <img src="/images/thumb-ik.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="4JyUwbqGQyo" instruction="Hexahedron"></div>
+                <img src="/images/thumb-hexa.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="T4tKBBSb12Q" instruction="Whale You Were Here"></div>
+                <img src="/images/thumb-whale.png">
+            </div>
+        </div>
+    </div>
+    <div id="code" class="tile">
+        <div class="title">
+            <h3>Playground</h3>
+        </div>
+        <div id="code-editor" class="content">
+            <div id="editor" class="interactable"></div>
+            <div id="control">
+                <div id="run" class="btn small"><h3>Run</h3></div>
+                <div id="copy" class="btn small grey"><h3>Copy</h3></div>
+                <div id="status"></div>
+            </div>
+
+            <div id="output" class="interactable">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="group">
+    <div id="contact" class="tile border">
+        <div class="contact-link-bg">
+            <div class="btn link orange" href="mailto:rli@rongolia.com">
+                <img src="/images/icon-email.png"><h3 style="transform: translateX(20px);">Email me</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+        
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.linkedin.com/in/rongjia-li-81357919a/">
+                <img src="/images/icon-linkedin.png"><h3>LinkedIn</h3>
+            </div>
+            <div class="btn link" href="https://github.com/EricLee12138">
+                <img src="/images/icon-github.png"><h3>Github</h3>
+            </div>
+            <div class="btn link" href="https://www.etc.cmu.edu/blog/author/rongjial/">
+                <img src="/images/icon-etc.png"><h3>ETC</h3>
+            </div>
+            <div class="btn link" href="https://itch.io/profile/ericlee12138">
+                <img src="/images/icon-itch.png"><h3>Itch.io</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.youtube.com/channel/UC2NpEgeXotQdUs49Y6xDF1g">
+                <img src="/images/icon-youtube.png"><h3 style="color: red;">YouTube</h3>
+            </div>
+            <div class="btn link" href="https://www.twitch.tv/howdumbpeopleplaygames">
+                <img src="/images/icon-twitch.png"><h3 style="color: #9146FF;">Twitch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="tile">
+    <p class="no-margin">Welcome to Rongolia</p>
+    <!-- <p class="no-margin">Terms of Services | This Policy | That Policy | All Fake Policy</p> -->
+</div>
+
+    </div>
+
+    <div id="cursor">
+        <div id="cursor-instruction">
+            Instruction goes here...
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<!-- 
+[layout]
+<html>
+    [head] [/head]
+
+<body>
+    [index]
+
+    [nav] [/nav]
+
+    [body] [/body]
+
+    [footer] [/footer]
+
+    [/index]
+
+</body>
+</html>
+[/layout]
+ -->

@@ -1,0 +1,68 @@
+div.mobile {
+    width: calc(350px + 2* var(--tile-margin));
+    height: fit-content;
+    margin: 65px auto 0;
+}
+
+div#links div.link-container {
+    border: 2px solid;
+    border-image: var(--tile-border-image);
+    border-image-width: var(--tile-border-width);
+    border-image-slice: var(--tile-border-slice);
+    background-color: var(--color-darker-grey);
+    background-clip: padding-box;
+    margin: 10px;
+}
+div#links div > div.link-container {
+    margin: 6px 10px;
+}
+div#links div > div.link-container:last-child {
+    margin-bottom: 10px;
+}
+
+div#links div#profile-pic {
+    width: 100%;
+    margin: 30px 0;
+}
+div#links div#profile-pic img {
+    width: 200px;
+    image-rendering: pixelated;
+    margin: 0 75px 20px;
+}
+div#links div#profile-pic h2 b {
+    letter-spacing: 6pt;
+}
+div#links div#profile-pic p, div#links div#profile-pic h2, div#links div#profile-pic h3 {
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 1pt;
+}
+
+div#links a, div#links a:visited {
+    text-decoration: none;
+    text-align: center;
+    color: initial;
+}
+div#links a#link-home {
+    border-image-source: url(/images/home2.png);
+    border-image-width: 12px 4px 4px 4px;
+    border-image-slice: 12 4 4 4 fill;
+}
+div#links a.btn.wide.full {
+    min-width: calc(100% - 100px);
+}
+div#links a.btn img {
+    width: 40px;
+    top: 8px;
+    left: 40px;
+    position: absolute;
+}
+/* div#links a.btn.left img {
+    left: 40px;
+}
+div#links a.btn.right img {
+    right: 40px;
+} */
+div#links h3 {
+    margin: 0;
+}

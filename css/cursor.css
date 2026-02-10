@@ -1,0 +1,44 @@
+:root {
+    --cursor-default: url(../images/cursor.png) 4 4, default;
+    --cursor-text: url(../images/cursor-text.png) 3 8, default;
+    --cursor-heart: url(../images/cursor-heart.png) 7 6, default;
+}
+
+div#cursor {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-image: url(/images/cursor-frame.png);
+    border-image-width: 14px;
+    border-image-slice: 7 fill;
+    z-index: 100;
+    pointer-events: none;
+}
+div#cursor-instruction {
+    padding: 10px;
+    right: 0;
+    bottom: calc(100% + 3px);
+    width: max-content;
+    max-width: 300px;
+    position: absolute;
+    border-image: url(/images/cursor-instruction.png);
+    border-image-width: 4px;
+    border-image-slice: 2 fill;
+    background-color: #fbe29f;
+    word-wrap: break-word;
+}
+
+body, *, a, a * {
+    cursor: var(--cursor-default) !important;
+}
+.text *:not(a):not(div):not(img),
+.ace_content {
+    cursor: var(--cursor-text) !important;
+}
+
+.heart, .heart * {
+    cursor: var(--cursor-heart) !important;
+}

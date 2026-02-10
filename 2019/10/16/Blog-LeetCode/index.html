@@ -1,0 +1,526 @@
+<html>
+<!-- Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <title>Rongolia</title>
+
+    <!-- <link rel="shortcut icon" href="/images/ericube.svg"> -->
+
+    <!-- Base css/js for all pages -->
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/cursor.css">
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/panel-left.css">
+<link rel="stylesheet" href="/css/panel-middle.css">
+<link rel="stylesheet" href="/css/panel-right.css">
+
+
+    
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/two.min.js"></script>
+
+    
+<script src="/vendor/ace/ace.js"></script>
+<script src="/vendor/ace/theme-monokai.js"></script>
+
+    
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/editor.js"></script>
+
+
+    <!-- Page specific css/js -->
+    
+
+    
+        
+<link rel="stylesheet" href="/css/page-post.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                
+            })
+        </script>
+    
+
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <!-- Body -->
+    
+
+    <div id="container">
+
+        <!-- Navigator -->
+        <!-- <div class="group">
+    <div id="banner" class="tile border">
+    </div>
+
+    <div id="about" class="tile end border wide">
+        <img src="/images/resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div>
+</div> -->
+
+<div id="nav" class="tile border">
+    <div class="nav-link-bg">
+        <div id="nav-home" class="nav-link link heart no-frame" href="/">
+            <img src="/images/logo.png" style="
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform-origin: bottom right;
+                /* transform: scale(2); */
+            ">
+        </div>
+        <div style="display: none;">
+            <img src="/images/world.png" style="
+                position: absolute;
+                bottom: -138px;
+                right: -2px;
+            ">
+            <img src="/images/world-bg.png" style="
+                position: absolute;
+                bottom: -101px;
+                right: -2px;
+                z-index: -1;
+            ">
+        </div>
+    </div>
+
+    <div class="nav-gap"></div>
+    
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-experience" class="nav-link-bd">
+            </div>
+            <div id="nav-link-experience" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/experience">
+                    <h3>experience</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-projects" class="nav-link-bd">
+            </div>
+            <div id="nav-link-projects" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/projects">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-education" class="nav-link-bd">
+            </div>
+            <div id="nav-link-education" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/education">
+                    <h3>education</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-blogs" class="nav-link-bd">
+            </div>
+            <div id="nav-link-blogs" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/blogs">
+                    <h3>blogs</h3>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="nav-gap"></div>
+
+    <div class="nav-settings">
+        <div id="nav-setting-room" class="nav-option btn link" instruction="Game room" href="/game">
+            <img src="/images/icon-room.png">
+        </div>
+        <div id="nav-setting-light" class="nav-option btn" instruction="Toggle light">
+            <img src="/images/icon-light.png">
+        </div>
+        <div id="nav-setting-music" class="nav-option btn" instruction="Toggle music">
+            <img src="/images/icon-music.png">
+        </div>
+        <div id="nav-setting-cat" class="nav-option btn no-frame heart">
+            <img id="cat" src="/images/icon-meow.gif">
+            <img src="/images/icon-toy.png">
+        </div>
+    </div>
+    <div id="load-mask" style="
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #f1efca;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    "></div>
+</div>
+
+        <!-- Body -->
+         <div class="body">
+            <div id="left" class="group">
+    <div id="poker" class="tile">
+        <div id="poker-card" class="content no-title no-frame heart">
+            
+            
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-1.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter spade"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-pic"><img src="/images/me-2.png"></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-letter spade"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-pic"><img src="/images/me-3.png"></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-4.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-0.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-5.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>Q</h3></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div id="about" class="tile end border">
+        <div class="link clickable" href="/files/resume.pdf"><h3>View Resume</h3></div>
+    </div>
+
+    
+        
+    
+
+    <!-- <div id="top-games" class="tile">
+        <div class="title">
+            <h3>Top Games</h3>
+        </div>
+        <div id="leaderboard" class="content">
+            
+            
+                <div class="tile link" href="">
+                    <div class="game-img"></div>
+                    <div class="game-rank"></div>
+                    <div class="game-name"></div>
+                </div>
+            
+        </div>
+    </div> -->
+</div>
+
+<div id="middle" class="group">
+    <div id="main" class="tile">
+        <div class="title">
+            <h3>Home</h3>
+        </div>
+        <div id="main-content" class="content">
+            
+
+    
+
+<div id="post-content" class="tile wide text">
+    <div class="tile-content text">
+        <h1>LeetCode</h1>
+
+        
+            
+        
+
+        <h2><span id="strings-reverse-integer">[Strings] Reverse Integer</span></h2><p>Given a 32-bit signed integer, reverse digits of an integer.</p>
+<p><strong>Example 1</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Input: 	123<br>Output: 321<br></code></pre></td></tr></table></figure>
+
+<p><strong>Example 2</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Input: 	-123<br>Output: -321<br></code></pre></td></tr></table></figure>
+
+<p><strong>Example 3</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Input: 	120<br>Output: 21<br></code></pre></td></tr></table></figure>
+
+<p><strong>Note</strong></p>
+<p>Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: $[−2^{31}, 2^{31} − 1]$. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
+<h3><span id="initialthoughts">InitialThoughts</span></h3><ol>
+<li>Get each digit number of the input number and store them into a vector.</li>
+<li>Use two iterators to iterate from the beginning and the end and swap two values of the iterators, therefore, get the reversed number.</li>
+<li>Check the validity of the number by comparing reversed digits with the digits of the biggest integer <code>INT_MAX</code>.</li>
+<li>Combined valid digits into one integer and return, otherwise, return 0.</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">reverse</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span> </span>&#123;<br>  	vector&lt;<span class="hljs-type">int</span>&gt; bits, max_bits;<br>    <span class="hljs-type">int</span> a, b;<br><br>    <span class="hljs-type">int</span> i = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">1000000000</span>) &#123;<br>        a = x / i;<br>        b = x / (i * <span class="hljs-number">10</span>);<br><br>        <span class="hljs-keyword">if</span> (a == <span class="hljs-number">0</span> &amp;&amp; b == <span class="hljs-number">0</span>)<br>            <span class="hljs-keyword">break</span>;<br><br>        bits.<span class="hljs-built_in">push_back</span>(a - b * <span class="hljs-number">10</span>);<br>        i *= <span class="hljs-number">10</span>;<br>    &#125;<br>    <span class="hljs-keyword">if</span> (x / i != <span class="hljs-number">0</span>)<br>        bits.<span class="hljs-built_in">push_back</span>(x / i);<br><br>    <span class="hljs-type">int</span> j = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (j &lt; <span class="hljs-number">1000000000</span>) &#123;<br>        a = INT_MAX / j;<br>        b = INT_MAX / (j * <span class="hljs-number">10</span>);<br><br>        <span class="hljs-keyword">if</span> (a == <span class="hljs-number">0</span> &amp;&amp; b == <span class="hljs-number">0</span>)<br>            <span class="hljs-keyword">break</span>;<br><br>        max_bits.<span class="hljs-built_in">push_back</span>(a - b * <span class="hljs-number">10</span>);<br>        j *= <span class="hljs-number">10</span>;<br>    &#125;<br>    max_bits.<span class="hljs-built_in">push_back</span>(INT_MAX / j);<br><br>    <span class="hljs-keyword">if</span> (bits.<span class="hljs-built_in">size</span>() &lt;= <span class="hljs-number">0</span>) &#123;<br>      	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>    &#125;<br><br>    vector&lt;<span class="hljs-type">int</span>&gt;::iterator begin = bits.<span class="hljs-built_in">begin</span>();<br>    vector&lt;<span class="hljs-type">int</span>&gt;::iterator end = bits.<span class="hljs-built_in">end</span>() - <span class="hljs-number">1</span>;<br><br>    <span class="hljs-keyword">while</span> (begin &lt; end) &#123;<br>        <span class="hljs-type">int</span> temp = *begin;<br>        *begin = *end;<br>        *end = temp;<br><br>        begin++; end--;<br>    &#125;<br><br>    <span class="hljs-keyword">if</span> (bits.<span class="hljs-built_in">size</span>() == max_bits.<span class="hljs-built_in">size</span>()) &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = bits.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>; j &gt;= <span class="hljs-number">0</span>; j--) &#123;<br>            <span class="hljs-keyword">if</span> ((x &gt; <span class="hljs-number">0</span> &amp;&amp; bits[j] &gt; max_bits[j]) ||<br>                (x &lt; <span class="hljs-number">0</span> &amp;&amp; -bits[j] &gt; max_bits[j]) ) &#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((x &gt; <span class="hljs-number">0</span> &amp;&amp; bits[j] &lt; max_bits[j]) ||<br>                       (x &lt; <span class="hljs-number">0</span> &amp;&amp; -bits[j] &lt; max_bits[j])) &#123;<br>                <span class="hljs-keyword">break</span>;<br>            &#125;<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-type">int</span> y = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">1</span>, k = <span class="hljs-number">0</span>; k &lt; bits.<span class="hljs-built_in">size</span>(); j *= <span class="hljs-number">10</span>, k++) &#123;<br>        y += j * bits[k];<br>        <span class="hljs-keyword">if</span> (j == <span class="hljs-number">1000000000</span>)<br>            <span class="hljs-keyword">break</span>;<br>    &#125;<br>  <br>    <span class="hljs-keyword">return</span> y;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3><span id="reference-solution">Reference Solution</span></h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">reverse</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span> </span>&#123;<br>    <span class="hljs-type">int</span> rev = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span> (x != <span class="hljs-number">0</span>) &#123;<br>        <span class="hljs-type">int</span> pop = x % <span class="hljs-number">10</span>;<br>        x /= <span class="hljs-number">10</span>;<br>        <br>        <span class="hljs-keyword">if</span> (rev &gt; INT_MAX / <span class="hljs-number">10</span> ||<br>            (rev == INT_MAX / <span class="hljs-number">10</span> &amp;&amp; pop &gt; <span class="hljs-number">7</span>))<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        <br>        <span class="hljs-keyword">if</span> (rev &lt; INT_MIN / <span class="hljs-number">10</span> || <br>            (rev == INT_MIN / <span class="hljs-number">10</span> &amp;&amp; pop &lt; <span class="hljs-number">-8</span>))<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        <br>        rev = rev * <span class="hljs-number">10</span> + pop;<br>    &#125;<br>    <br>    <span class="hljs-keyword">return</span> rev;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="linked-list-remove-nth-node-from-end-of-list">[Linked List] Remove Nth Node From End of List</span></h2><p>Given a linked list, remove the <em>n</em>-th node from the end of list and return its head.</p>
+<p><strong>Example</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Given linked list: 1-&gt;2-&gt;3-&gt;4-&gt;5, and n = 2.<br>After removing the second node from the end, the linked list becomes 1-&gt;2-&gt;3-&gt;5.<br></code></pre></td></tr></table></figure>
+
+<p><strong>Note</strong></p>
+<p>Given <em>n</em> will always be valid.</p>
+<p><strong>Follow up</strong></p>
+<p>Do this in one pass.</p>
+<h3><span id="initial-thoughts">Initial Thoughts</span></h3><p>Accomplishing the task in two passes is intuitive, by calculating the size of the linked list first and then find the nth node from the end.</p>
+<p>Using two pointers on the linked list, we can do this in one pass. The main idea is that, the first pointer points to the head node, the second one points to the nth child of the head node, between which there is a n-1 gap. Then move the two pointers at the same time until the second pointer reaches the end, the first pointer then points to the very node to be deleted.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function">ListNode* <span class="hljs-title">removeNthFromEnd</span><span class="hljs-params">(ListNode* head, <span class="hljs-type">int</span> n)</span> </span>&#123;<br>    ListNode*&amp; first = head;<br>    ListNode* second = first;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        second = second-&gt;next;<br>    &#125;<br><br>    <span class="hljs-keyword">while</span> (second != <span class="hljs-literal">NULL</span>) &#123;<br>        first = first-&gt;next;<br>        second = second-&gt;next;<br>    &#125;<br><br>    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> delete the node where the first pointer points</span><br><br>    <span class="hljs-keyword">return</span> head;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>What is difficult is how to correctly delete the node. The problem is that the node might be the tail node of the linked list. Directly deleting it as what is done in <a href="#">Delete Node in a Linked List</a> may cause runtime error since it doesn’t handle the tail node correctly.</p>
+<p>The right solution should be to find the parent of the first node instead of the first node. One way to do this is to extend the original linked list by adding a node to its head and then maintain a constant n gap.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function">ListNode* <span class="hljs-title">removeNthFromEnd</span><span class="hljs-params">(ListNode* head, <span class="hljs-type">int</span> n)</span> </span>&#123;<br>    ListNode* parent = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ListNode</span>(<span class="hljs-number">0</span>);<br>    parent-&gt;next = head;<br><br>    ListNode* first = parent;<br>    ListNode* second = parent;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt;= n; i++) &#123;<br>    	second = second-&gt;next;<br>    &#125;<br><br>    <span class="hljs-keyword">while</span> (second != <span class="hljs-literal">NULL</span>) &#123;<br>        first = first-&gt;next;<br>        second = second-&gt;next;<br>    &#125;<br><br>    first-&gt;next = first-&gt;next-&gt;next;<br><br>    <span class="hljs-keyword">return</span> parent-&gt;next;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="linked-list-reverse-linked-list">[Linked List] Reverse Linked List</span></h2><p>Reverse a singly linked list.</p>
+<p><strong>Example</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Input: 	1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL<br>Output: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL<br></code></pre></td></tr></table></figure>
+
+<p><strong>Follow up</strong></p>
+<p>Reverse the linked list both in iterative way and recursive way.</p>
+<h3><span id="iterative-solution">Iterative Solution</span></h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function">ListNode* <span class="hljs-title">reverseList</span><span class="hljs-params">(ListNode* head)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (head == <span class="hljs-literal">NULL</span>)<br>        <span class="hljs-keyword">return</span> head;<br><br>    ListNode *current = head-&gt;next;<br>    ListNode *last = head;<br>    ListNode *temp;<br><br>    head-&gt;next = <span class="hljs-literal">NULL</span>;<br><br>    <span class="hljs-keyword">while</span> (current != <span class="hljs-literal">NULL</span>) &#123;<br>        temp = current-&gt;next;<br>        current-&gt;next = last;<br>        last = current;            <br>        current = temp;<br>    &#125;<br><br>    <span class="hljs-keyword">return</span> last;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3><span id="recursive-solution">Recursive Solution</span></h3><h4><span id="initial-thoughts">Initial Thoughts</span></h4><h2><span id="linked-list-merge-two-sorted-lists">[Linked List] Merge Two Sorted Lists</span></h2><p>Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p>
+<p><strong>Example</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Input: 	1-&gt;2-&gt;4, 1-&gt;3-&gt;4<br>Output: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4<br></code></pre></td></tr></table></figure>
+
+<h3><span id="solution">Solution</span></h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function">ListNode* <span class="hljs-title">mergeTwoLists</span><span class="hljs-params">(ListNode* l1, ListNode* l2)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (l1 == <span class="hljs-literal">NULL</span>) &#123;<br>            <span class="hljs-keyword">return</span> l2;<br>        &#125;<br>        <br>        <span class="hljs-keyword">if</span> (l2 == <span class="hljs-literal">NULL</span>) &#123;<br>            <span class="hljs-keyword">return</span> l1;<br>        &#125;<br>        <br>        ListNode* l1First = l1;<br>        ListNode* l1Second = l1-&gt;next;<br>        ListNode* l2Target = l2;<br>        <br>        <span class="hljs-keyword">if</span> (l2Target-&gt;val &lt;= l1First-&gt;val) &#123;<br>            l2Target-&gt;next = <span class="hljs-built_in">mergeTwoLists</span>(l1First, l2Target-&gt;next);<br>            <span class="hljs-keyword">return</span> l2Target;<br>        &#125;<br>        <br>        <span class="hljs-keyword">if</span> (l1Second == <span class="hljs-literal">NULL</span>) &#123;<br>            l1First-&gt;next = l2Target;<br>            <span class="hljs-keyword">return</span> l1First;<br>        &#125;<br>        <br>        <span class="hljs-keyword">if</span> (l2Target-&gt;val &gt; l1First-&gt;val &amp;&amp; l2Target-&gt;val &lt;= l1Second-&gt;val) &#123;<br>            l2Target-&gt;next = <span class="hljs-built_in">mergeTwoLists</span>(l1Second, l2Target-&gt;next);<br>            l1First-&gt;next = l2Target;<br>            <span class="hljs-keyword">return</span> l1First;<br>        &#125;<br>        <br>        <span class="hljs-keyword">if</span> (l2Target-&gt;val &gt; l1Second-&gt;val) &#123;<br>            l1Second-&gt;next = <span class="hljs-built_in">mergeTwoLists</span>(l1Second-&gt;next, l2Target);<br>            <span class="hljs-keyword">return</span> l1First;<br>        &#125;<br>        <br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="linked-list-find-the-middle">[Linked List] Find The Middle</span></h2><p>Given a singly linked list, find middle of the linked list. For example, if given linked list is </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">1-&gt;2-&gt;3-&gt;4-&gt;5<br></code></pre></td></tr></table></figure>
+
+<p> then output should be 3. </p>
+<p>If there are even nodes, then there would be two middle nodes, we need to print second middle element. For example, if given linked list is</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6<br></code></pre></td></tr></table></figure>
+
+<p> then output should be 4.</p>
+<h3><span id="initial-thought">Initial Thought</span></h3><p>Intuitively, the middle node should be the <code>((int)size / 2) + 1</code> node of the linked list, where <code>size</code> is the overall size of the linked list. So we can find it by counting.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">FindMiddle</span><span class="hljs-params">(ListNode* head)</span> </span>&#123;<br><br>    <span class="hljs-comment">// Get the overall size of the list</span><br>    ListNode* cur = head;<br>    <span class="hljs-type">int</span> size = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span> (cur != <span class="hljs-literal">NULL</span>) &#123;<br>        size++; cur = cur-&gt;next;<br>    &#125;<br><br>    <span class="hljs-comment">// Return the ((size / 2) + 1)th node of the list</span><br>    cur = head;<br>    <span class="hljs-type">int</span> middle = size / <span class="hljs-number">2</span>;<br>    <span class="hljs-keyword">while</span> (middle &gt; <span class="hljs-number">0</span>) &#123;<br>        middle--; cur = cur-&gt;next;<br>    &#125;<br><br>    <span class="hljs-keyword">return</span> cur-&gt;val;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>The method uses two integers, one linked list node and traverses the list for one and a half times.</p>
+<h3><span id="two-pointers-method">Two Pointers Method</span></h3><p>Traverse linked list using two pointers. Move one pointer by one and other pointer by two. When the fast pointer reaches end slow pointer will reach middle of the linked list.</p>
+<p>Below image shows how printMiddle function works in the code:</p>
+<img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gbagtmsfdnj30nm0pb400.jpg" alt="img" style="width:60%;">
+
+<h3><span id="oddly-increment-method">Oddly Increment Method</span></h3><p>Initialize mid element as head and initialize a counter as 0. Traverse the list from head, while traversing increment the counter and change mid to mid-&gt;next whenever the counter is odd. So the mid will move only half of the total length of the list.</p>
+
+    </div>
+</div>
+
+
+    <div id="blog-archive" class="tile wide">
+        <div class="tile-title">
+            <h3>All Blogs</h3>
+        </div>
+        <div class="tile-content">
+            
+            
+            
+                <div class="tile link" href="/2025/04/16/Blog-CPP/" instruction="Notes: C++">
+                    <img src="/images/blog-cpp.png">
+                </div>
+            
+                <div class="tile link" href="/2025/04/16/Blog-GPP/" instruction="Notes: Game Programming Pattern">
+                    <img src="/images/blog-gpp.png">
+                </div>
+            
+                <div class="tile link" href="/2025/04/16/Blog-Unity/" instruction="Notes: Unity">
+                    <img src="/images/blog-unity.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Blog-Unreal/" instruction="Notes: Unreal Engine">
+                    <img src="/images/blog-ue.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/15/Blog-TechnicalAnimation/" instruction="Technical Animation Blogs">
+                    <img src="/images/blog-ta.png">
+                </div>
+            
+                <div class="tile link" href="/2019/10/16/Blog-LeetCode/" instruction="LeetCode">
+                    <img src="/images/blog-leetcode.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/16/Blog-UnityShader/" instruction="C# and Shader for the Unity Engine">
+                    <img src="/images/blog-shader.png">
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right" class="group">
+    <!-- <div id="about" class="tile end border">
+        <img src="/images/icon-resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div> -->
+
+    
+    
+    <div id="video" class="tile">
+        <div class="title">
+            <h3>Videos</h3>
+        </div>
+        <div id="video-player" class="content">
+            <div id="api-player"></div>
+        </div>
+        <div id="video-select" class="content">
+            <div class="tile clickable">
+                <div class="select select-bg" select="nWryvhC41Oo" instruction="Spline Interface for Intuitive Skinning Weight Editing"></div>
+                <img src="/images/thumb-spline.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="kNO2yru0e9s" instruction="CCD IK and FABRIK"></div>
+                <img src="/images/thumb-ik.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="4JyUwbqGQyo" instruction="Hexahedron"></div>
+                <img src="/images/thumb-hexa.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="T4tKBBSb12Q" instruction="Whale You Were Here"></div>
+                <img src="/images/thumb-whale.png">
+            </div>
+        </div>
+    </div>
+    <div id="code" class="tile">
+        <div class="title">
+            <h3>Playground</h3>
+        </div>
+        <div id="code-editor" class="content">
+            <div id="editor" class="interactable"></div>
+            <div id="control">
+                <div id="run" class="btn small"><h3>Run</h3></div>
+                <div id="copy" class="btn small grey"><h3>Copy</h3></div>
+                <div id="status"></div>
+            </div>
+
+            <div id="output" class="interactable">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="group">
+    <div id="contact" class="tile border">
+        <div class="contact-link-bg">
+            <div class="btn link orange" href="mailto:rli@rongolia.com">
+                <img src="/images/icon-email.png"><h3 style="transform: translateX(20px);">Email me</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+        
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.linkedin.com/in/rongjia-li-81357919a/">
+                <img src="/images/icon-linkedin.png"><h3>LinkedIn</h3>
+            </div>
+            <div class="btn link" href="https://github.com/EricLee12138">
+                <img src="/images/icon-github.png"><h3>Github</h3>
+            </div>
+            <div class="btn link" href="https://www.etc.cmu.edu/blog/author/rongjial/">
+                <img src="/images/icon-etc.png"><h3>ETC</h3>
+            </div>
+            <div class="btn link" href="https://itch.io/profile/ericlee12138">
+                <img src="/images/icon-itch.png"><h3>Itch.io</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.youtube.com/channel/UC2NpEgeXotQdUs49Y6xDF1g">
+                <img src="/images/icon-youtube.png"><h3 style="color: red;">YouTube</h3>
+            </div>
+            <div class="btn link" href="https://www.twitch.tv/howdumbpeopleplaygames">
+                <img src="/images/icon-twitch.png"><h3 style="color: #9146FF;">Twitch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="tile">
+    <p class="no-margin">Welcome to Rongolia</p>
+    <!-- <p class="no-margin">Terms of Services | This Policy | That Policy | All Fake Policy</p> -->
+</div>
+
+    </div>
+
+    <div id="cursor">
+        <div id="cursor-instruction">
+            Instruction goes here...
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<!-- 
+[layout]
+<html>
+    [head] [/head]
+
+<body>
+    [index]
+
+    [nav] [/nav]
+
+    [body] [/body]
+
+    [footer] [/footer]
+
+    [/index]
+
+</body>
+</html>
+[/layout]
+ -->

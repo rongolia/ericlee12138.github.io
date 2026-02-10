@@ -1,0 +1,475 @@
+<html>
+<!-- Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <title>Rongolia</title>
+
+    <!-- <link rel="shortcut icon" href="/images/ericube.svg"> -->
+
+    <!-- Base css/js for all pages -->
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/cursor.css">
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/panel-left.css">
+<link rel="stylesheet" href="/css/panel-middle.css">
+<link rel="stylesheet" href="/css/panel-right.css">
+
+
+    
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/two.min.js"></script>
+
+    
+<script src="/vendor/ace/ace.js"></script>
+<script src="/vendor/ace/theme-monokai.js"></script>
+
+    
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/editor.js"></script>
+
+
+    <!-- Page specific css/js -->
+    
+
+    
+        
+<link rel="stylesheet" href="/css/page-post.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                
+            })
+        </script>
+    
+
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <!-- Body -->
+    
+
+    <div id="container">
+
+        <!-- Navigator -->
+        <!-- <div class="group">
+    <div id="banner" class="tile border">
+    </div>
+
+    <div id="about" class="tile end border wide">
+        <img src="/images/resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div>
+</div> -->
+
+<div id="nav" class="tile border">
+    <div class="nav-link-bg">
+        <div id="nav-home" class="nav-link link heart no-frame" href="/">
+            <img src="/images/logo.png" style="
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform-origin: bottom right;
+                /* transform: scale(2); */
+            ">
+        </div>
+        <div style="display: none;">
+            <img src="/images/world.png" style="
+                position: absolute;
+                bottom: -138px;
+                right: -2px;
+            ">
+            <img src="/images/world-bg.png" style="
+                position: absolute;
+                bottom: -101px;
+                right: -2px;
+                z-index: -1;
+            ">
+        </div>
+    </div>
+
+    <div class="nav-gap"></div>
+    
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-experience" class="nav-link-bd">
+            </div>
+            <div id="nav-link-experience" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/experience">
+                    <h3>experience</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-projects" class="nav-link-bd">
+            </div>
+            <div id="nav-link-projects" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/projects">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-education" class="nav-link-bd">
+            </div>
+            <div id="nav-link-education" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/education">
+                    <h3>education</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-blogs" class="nav-link-bd">
+            </div>
+            <div id="nav-link-blogs" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/blogs">
+                    <h3>blogs</h3>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="nav-gap"></div>
+
+    <div class="nav-settings">
+        <div id="nav-setting-room" class="nav-option btn link" instruction="Game room" href="/game">
+            <img src="/images/icon-room.png">
+        </div>
+        <div id="nav-setting-light" class="nav-option btn" instruction="Toggle light">
+            <img src="/images/icon-light.png">
+        </div>
+        <div id="nav-setting-music" class="nav-option btn" instruction="Toggle music">
+            <img src="/images/icon-music.png">
+        </div>
+        <div id="nav-setting-cat" class="nav-option btn no-frame heart">
+            <img id="cat" src="/images/icon-meow.gif">
+            <img src="/images/icon-toy.png">
+        </div>
+    </div>
+    <div id="load-mask" style="
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #f1efca;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    "></div>
+</div>
+
+        <!-- Body -->
+         <div class="body">
+            <div id="left" class="group">
+    <div id="poker" class="tile">
+        <div id="poker-card" class="content no-title no-frame heart">
+            
+            
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-1.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter spade"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-pic"><img src="/images/me-2.png"></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-letter spade"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-pic"><img src="/images/me-3.png"></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-4.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-0.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-5.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>Q</h3></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div id="about" class="tile end border">
+        <div class="link clickable" href="/files/resume.pdf"><h3>View Resume</h3></div>
+    </div>
+
+    
+        
+    
+
+    <!-- <div id="top-games" class="tile">
+        <div class="title">
+            <h3>Top Games</h3>
+        </div>
+        <div id="leaderboard" class="content">
+            
+            
+                <div class="tile link" href="">
+                    <div class="game-img"></div>
+                    <div class="game-rank"></div>
+                    <div class="game-name"></div>
+                </div>
+            
+        </div>
+    </div> -->
+</div>
+
+<div id="middle" class="group">
+    <div id="main" class="tile">
+        <div class="title">
+            <h3>Home</h3>
+        </div>
+        <div id="main-content" class="content">
+            
+
+    
+
+<div id="post-content" class="tile wide text">
+    <div class="tile-content text">
+        <h1>Technical Animation Blogs</h1>
+
+        
+            
+        
+
+        <h2><span id="course-intro-jan-13">Course Intro [Jan 13]</span></h2><p>Like what I said when I was introducing myself, I am struggling because I am not sure what I want to do in the future. My background was in Software Engineering, where I found game development is interesting.<br>I came across the concept of technical art one year before coming to the Entertainment Technology Center in CMU, which appears fascinating and appealing to me. I am rather familiar with programming, at the same time, I do have basic knowledge of 3D art, including modeling, rigging, and animation. So the combination of technology and art looks just perfect for me. However, I only have two years in CMU, so I have to figure out what I want to do more or what is more suitable for me, and how I can achieve the goal and get into the game industry.<br>After talking to some alumni and seniors (thanks to ETC West Coast Trip), I finally make up my mind and decide to try taking Technical Animation. Going through the syllabus of the course, I find a lot of topics exciting, like IK, rigging and skinning, cloth and fluid simulation, etc., which I also believe is helpful to my future career.<br>One thing that I am not sure about is how I can make good use of the course project and do some work the way an actual tech artist works. After all, my goal of taking the course is to get myself a job, and only by practicing and doing projects can help me build my skillset.</p>
+<h2><span id="techniques-for-creating-animation-jan-15">Techniques for Creating Animation [Jan 15]</span></h2><p>Keyframing, procedural animation, data-driven animation, and physics-based animation are the most common techniques for creating animation. For me, keyframing is the one that I am most familiar with and interested in. Generally, keyframing animation can be done by setting up basic key poses and then in-between frames.<br>What I feel very much interesting is that we can change the way the animation looks like by modifying some related parameters, for example, the emotion and status of a walking human model. Although completely simulating a human with emotion is impossible because of the subtleness and unpredictability, manipulation of several parameters can already affect greatly on the model. What I am concerned about is how we can find the parameters related to one aspect of the model’s appearance.</p>
+<h2><span id="motion-capture-jan-22">Motion Capture [Jan 22]</span></h2><p>Motion capture is important in a lot of fields and industries. So far I have visited motion capture studios from Activision and Carnegie Mellon University. Activision motion capture studio is much larger and has more than a hundred advanced motion capture cameras as well as facial capture devices. While the one on campus is more focusing on research and study.</p>
+<p>Personally, I am very interested in motion capture and would love to learn about it. Also, I have a lot of questions in terms of how the whole process is working and how it can help us. For example:</p>
+<ul>
+<li>Are there any identifiers that stand for those dots on the costume? If so do we need to remember their specific position? If they are basically the same, how does the camera match the dots with different parts of a body?</li>
+<li>Among all those dots that camera captures, is there any structure or hierarchy?</li>
+<li>Before exporting, can we modify the animation manually in the motion capture software and how?</li>
+<li>After exporting, can animators modify the animation in other software?</li>
+</ul>
+<p>Since the studio is open to students, I prefer to give it a try and do some motion capture projects and figure out the answers by myself.</p>
+<h2><span id="inverse-kinematics-i-jan-27">Inverse Kinematics I [Jan 27]</span></h2><p>Understanding IK is relatively easier that making an actual implementation. To further understand IK, there are at least two follow-up tasks. One is figuring out how people come up with several alternatives to pseudo inverse and the respective pros and cons. The other is to think of how to implement IK, either by making a tool or doing some research to find how current 3D softwares like Maya and 3DMax using IK.</p>
+<p>Another similar concept I learned from Maya is FK, i.e. Forward Kinematics. Learning about the difference can be interesting.</p>
+<h2><span id="inverse-kinematics-ii-jan-29">Inverse Kinematics II [Jan 29]</span></h2><p>Basic Jacobian IK works pretty well on common skeletons, but usually has a great cost on performance. So a lot of new techniques are come up with to make Jacobian IK faster and feasible to  run in real-time, like Parallel IK, which can perform IK in a multithreaded way.</p>
+<p>On the other hand, some techniques are similar to CCD, aiming to deal with scenarios that CCD can not handle. For example, the iterative process that FABRIK performs looks very much like CCD but performs well on complicated skeletons.</p>
+<p>Mesh-based IK is different and very interesting because it doesn’t require any skeleton, which might greatly reduce animators’ work and therefore has huge potential.</p>
+<h2><span id="motion-editing-feb-3">Motion Editing [Feb 3]</span></h2><p>I am very interested in the pre-computed search tree. The main idea that converting the state machine to a search tree might be well used in games since the state machine is a very common concept.<br>Also, the animation is real-time interactive, which reminds me of one of my previous projects where I was trying to find the fire evacuation path for people in different positions. Besides the fixed obstacles on the floor that can be avoided by precomputing, moving people in real-time should also be considered as obstacles. The interactive algorithm in the paper may be able to handle the situation very well.</p>
+<h2><span id="motion-editing-ii-feb-5">Motion Editing II [Feb 5]</span></h2><p>The sketch-based motion editing and cartoon style motion amplifier works really fine and the interaction looks pretty intuitive. And in 2018 there was a paper implementing a spline interface for skinning weight editing. But there are some obstacles that keep these ideas from being actually used in real industry. For now, what we talked about in class does not make a lot of sense to me. So I want to have an opportunity to implement part of the ideas and try to figure it out by myself. Maybe I should consider about doing it for the final project if that’s possible.</p>
+<h2><span id="rigging-and-skinning-feb-10">Rigging and Skinning [Feb 10]</span></h2><h2><span id="cloth-simulation-feb-19">Cloth Simulation [Feb 19]</span></h2><h2><span id="cloth-simulation-ii-feb-24">Cloth Simulation II [Feb 24]</span></h2><h2><span id="rigid-bodies-and-contact-feb-26">Rigid Bodies and Contact [Feb 26]</span></h2>
+    </div>
+</div>
+
+
+    <div id="blog-archive" class="tile wide">
+        <div class="tile-title">
+            <h3>All Blogs</h3>
+        </div>
+        <div class="tile-content">
+            
+            
+            
+                <div class="tile link" href="/2025/04/16/Blog-CPP/" instruction="Notes: C++">
+                    <img src="/images/blog-cpp.png">
+                </div>
+            
+                <div class="tile link" href="/2025/04/16/Blog-GPP/" instruction="Notes: Game Programming Pattern">
+                    <img src="/images/blog-gpp.png">
+                </div>
+            
+                <div class="tile link" href="/2025/04/16/Blog-Unity/" instruction="Notes: Unity">
+                    <img src="/images/blog-unity.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Blog-Unreal/" instruction="Notes: Unreal Engine">
+                    <img src="/images/blog-ue.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/15/Blog-TechnicalAnimation/" instruction="Technical Animation Blogs">
+                    <img src="/images/blog-ta.png">
+                </div>
+            
+                <div class="tile link" href="/2019/10/16/Blog-LeetCode/" instruction="LeetCode">
+                    <img src="/images/blog-leetcode.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/16/Blog-UnityShader/" instruction="C# and Shader for the Unity Engine">
+                    <img src="/images/blog-shader.png">
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right" class="group">
+    <!-- <div id="about" class="tile end border">
+        <img src="/images/icon-resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div> -->
+
+    
+    
+    <div id="video" class="tile">
+        <div class="title">
+            <h3>Videos</h3>
+        </div>
+        <div id="video-player" class="content">
+            <div id="api-player"></div>
+        </div>
+        <div id="video-select" class="content">
+            <div class="tile clickable">
+                <div class="select select-bg" select="nWryvhC41Oo" instruction="Spline Interface for Intuitive Skinning Weight Editing"></div>
+                <img src="/images/thumb-spline.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="kNO2yru0e9s" instruction="CCD IK and FABRIK"></div>
+                <img src="/images/thumb-ik.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="4JyUwbqGQyo" instruction="Hexahedron"></div>
+                <img src="/images/thumb-hexa.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="T4tKBBSb12Q" instruction="Whale You Were Here"></div>
+                <img src="/images/thumb-whale.png">
+            </div>
+        </div>
+    </div>
+    <div id="code" class="tile">
+        <div class="title">
+            <h3>Playground</h3>
+        </div>
+        <div id="code-editor" class="content">
+            <div id="editor" class="interactable"></div>
+            <div id="control">
+                <div id="run" class="btn small"><h3>Run</h3></div>
+                <div id="copy" class="btn small grey"><h3>Copy</h3></div>
+                <div id="status"></div>
+            </div>
+
+            <div id="output" class="interactable">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="group">
+    <div id="contact" class="tile border">
+        <div class="contact-link-bg">
+            <div class="btn link orange" href="mailto:rli@rongolia.com">
+                <img src="/images/icon-email.png"><h3 style="transform: translateX(20px);">Email me</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+        
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.linkedin.com/in/rongjia-li-81357919a/">
+                <img src="/images/icon-linkedin.png"><h3>LinkedIn</h3>
+            </div>
+            <div class="btn link" href="https://github.com/EricLee12138">
+                <img src="/images/icon-github.png"><h3>Github</h3>
+            </div>
+            <div class="btn link" href="https://www.etc.cmu.edu/blog/author/rongjial/">
+                <img src="/images/icon-etc.png"><h3>ETC</h3>
+            </div>
+            <div class="btn link" href="https://itch.io/profile/ericlee12138">
+                <img src="/images/icon-itch.png"><h3>Itch.io</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.youtube.com/channel/UC2NpEgeXotQdUs49Y6xDF1g">
+                <img src="/images/icon-youtube.png"><h3 style="color: red;">YouTube</h3>
+            </div>
+            <div class="btn link" href="https://www.twitch.tv/howdumbpeopleplaygames">
+                <img src="/images/icon-twitch.png"><h3 style="color: #9146FF;">Twitch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="tile">
+    <p class="no-margin">Welcome to Rongolia</p>
+    <!-- <p class="no-margin">Terms of Services | This Policy | That Policy | All Fake Policy</p> -->
+</div>
+
+    </div>
+
+    <div id="cursor">
+        <div id="cursor-instruction">
+            Instruction goes here...
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<!-- 
+[layout]
+<html>
+    [head] [/head]
+
+<body>
+    [index]
+
+    [nav] [/nav]
+
+    [body] [/body]
+
+    [footer] [/footer]
+
+    [/index]
+
+</body>
+</html>
+[/layout]
+ -->

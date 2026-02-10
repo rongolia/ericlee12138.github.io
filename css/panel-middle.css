@@ -1,0 +1,110 @@
+/* Middle panel */
+div#middle div {
+    width: 602px;
+}
+div#middle div.content, div#middle div.tile-content {
+    background-color: var(--color-white);
+}
+div#middle div.tile.wide div.tile{
+    border-right-width: 3px;
+}
+div#middle div.tile div.tile.left{
+    border-right-width: 3px;
+}
+div#middle div.tile div.tile.right{
+    float: right;
+    margin: 6px 6px 0 0;
+    border-left-width: 3px;
+}
+div#middle div.tile div.tile {
+    margin: 6px 0 0 6px;
+    width: 293px;
+    min-height: 150px;
+    /* max-height: 404px; */
+    float: left;
+    background-color: var(--color-blue);
+    box-shadow: none;
+    box-sizing: border-box;
+    border: solid var(--color-blue) 6px;
+}
+div#middle div.tile div.tile.wide {
+    width: 586px;
+}
+div#middle div.tile div.tile:last-child {
+    margin-bottom: 6px;
+}
+div#middle div.tile div.tile div.tile-title {
+    width: fit-content;
+    height: 20px;
+    padding: 0 8px 0;
+    border-radius: 5px 5px 0 0;
+    background-color: var(--color-white);
+}
+div#middle div.tile div.tile div.tile-content {
+    padding: 20px 18px 20px 18px;
+    width: auto;
+    display: inline-table;
+    border-radius: 0 5px 5px;
+}
+div#middle div.tile div.tile div.tile-content:has(div.tile) {
+    padding: 0;
+}
+div#middle div.tile div.tile.wide div.tile-content div.tile,
+div#middle div.tile div.tile.wide div.tile-content div.tile img {
+    width: 183.3px;
+    height: 122.2px;
+}
+div#middle div.tile div.tile div.tile-content div.tile {
+    width: 133px;
+    min-height: 90px;
+    background-color: white;
+    border: solid 2px var(--color-blue);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+div#middle div.tile div.tile div.tile-content div.tile.wide, div#right div.tile.wide {
+    margin-right: 6px;
+    padding: 0 0 0 88px;
+    width: 272px;
+    position: relative;
+    overflow: hidden;
+}
+div#middle div.tile div.tile div.tile-content div.tile img, div#right div.tile img {
+    width: 129px;
+    height: 86px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    image-rendering: initial;
+    z-index: 1;
+}
+div#middle div.tile div.tile div.tile-content div.tile.wide img, div#right div.tile.wide img {
+    width: 85px;
+    left: -5px;
+}
+div#middle div.tile div.tile div.tile-footer {
+    padding: 1px 5px 0 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    background-color: var(--color-blue);
+    z-index: 0;
+    color: white;
+}
+
+/* Main section */
+div#main {
+    /* min-height: 1000px; */
+    min-height: 100px;
+}
+div#main-content {
+    /* min-height: calc(1000px - var(--title-height)); */
+    background-color: var(--color-white);
+}
+div#main-content div#home-content-showcase {
+    margin: 6px 0 0 6px;
+    width: 586px;
+}

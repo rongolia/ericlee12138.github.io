@@ -1,0 +1,486 @@
+<html>
+<!-- Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <title>Rongolia</title>
+
+    <!-- <link rel="shortcut icon" href="/images/ericube.svg"> -->
+
+    <!-- Base css/js for all pages -->
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/cursor.css">
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/panel-left.css">
+<link rel="stylesheet" href="/css/panel-middle.css">
+<link rel="stylesheet" href="/css/panel-right.css">
+
+
+    
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/two.min.js"></script>
+
+    
+<script src="/vendor/ace/ace.js"></script>
+<script src="/vendor/ace/theme-monokai.js"></script>
+
+    
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/editor.js"></script>
+
+
+    <!-- Page specific css/js -->
+    
+
+    
+        
+<link rel="stylesheet" href="/css/page-post.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                
+            })
+        </script>
+    
+
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <!-- Body -->
+    
+
+    <div id="container">
+
+        <!-- Navigator -->
+        <!-- <div class="group">
+    <div id="banner" class="tile border">
+    </div>
+
+    <div id="about" class="tile end border wide">
+        <img src="/images/resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div>
+</div> -->
+
+<div id="nav" class="tile border">
+    <div class="nav-link-bg">
+        <div id="nav-home" class="nav-link link heart no-frame" href="/">
+            <img src="/images/logo.png" style="
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform-origin: bottom right;
+                /* transform: scale(2); */
+            ">
+        </div>
+        <div style="display: none;">
+            <img src="/images/world.png" style="
+                position: absolute;
+                bottom: -138px;
+                right: -2px;
+            ">
+            <img src="/images/world-bg.png" style="
+                position: absolute;
+                bottom: -101px;
+                right: -2px;
+                z-index: -1;
+            ">
+        </div>
+    </div>
+
+    <div class="nav-gap"></div>
+    
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-experience" class="nav-link-bd">
+            </div>
+            <div id="nav-link-experience" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/experience">
+                    <h3>experience</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-projects" class="nav-link-bd">
+            </div>
+            <div id="nav-link-projects" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/projects">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-education" class="nav-link-bd">
+            </div>
+            <div id="nav-link-education" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/education">
+                    <h3>education</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-blogs" class="nav-link-bd">
+            </div>
+            <div id="nav-link-blogs" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/blogs">
+                    <h3>blogs</h3>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="nav-gap"></div>
+
+    <div class="nav-settings">
+        <div id="nav-setting-room" class="nav-option btn link" instruction="Game room" href="/game">
+            <img src="/images/icon-room.png">
+        </div>
+        <div id="nav-setting-light" class="nav-option btn" instruction="Toggle light">
+            <img src="/images/icon-light.png">
+        </div>
+        <div id="nav-setting-music" class="nav-option btn" instruction="Toggle music">
+            <img src="/images/icon-music.png">
+        </div>
+        <div id="nav-setting-cat" class="nav-option btn no-frame heart">
+            <img id="cat" src="/images/icon-meow.gif">
+            <img src="/images/icon-toy.png">
+        </div>
+    </div>
+    <div id="load-mask" style="
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #f1efca;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    "></div>
+</div>
+
+        <!-- Body -->
+         <div class="body">
+            <div id="left" class="group">
+    <div id="poker" class="tile">
+        <div id="poker-card" class="content no-title no-frame heart">
+            
+            
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-1.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter spade"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-pic"><img src="/images/me-2.png"></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-letter spade"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-pic"><img src="/images/me-3.png"></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-4.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-0.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-5.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>Q</h3></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div id="about" class="tile end border">
+        <div class="link clickable" href="/files/resume.pdf"><h3>View Resume</h3></div>
+    </div>
+
+    
+        
+    
+
+    <!-- <div id="top-games" class="tile">
+        <div class="title">
+            <h3>Top Games</h3>
+        </div>
+        <div id="leaderboard" class="content">
+            
+            
+                <div class="tile link" href="">
+                    <div class="game-img"></div>
+                    <div class="game-rank"></div>
+                    <div class="game-name"></div>
+                </div>
+            
+        </div>
+    </div> -->
+</div>
+
+<div id="middle" class="group">
+    <div id="main" class="tile">
+        <div class="title">
+            <h3>Home</h3>
+        </div>
+        <div id="main-content" class="content">
+            
+
+    
+
+<div id="post-content" class="tile wide text">
+    <div class="tile-content text">
+        <h1>Letters From The BattleField</h1>
+
+        
+            
+        
+
+        <p><img src="/images/ggj2022.png"></p>
+<p><a target="_blank" rel="noopener" href="https://v3.globalgamejam.org/2022/games/letters-battlefield-5">Letters From The BattleField</a> is a story-based 2d game where you, as a mother, are making a lot of choices to help your son who’s on the battlefield. In the game, you will be interacting with some objects from the house and decide the story of your son, your neighbors, and yourself.</p>
+<p>The game is built using <strong>Unity</strong> during <strong>Global Game Jam 2022</strong> in two days.</p>
+<p>By making this game, we want to make a point that one thing that a person does can have two completely different outcomes and that a person can be considered as both kind and evil at the same time.</p>
+<p><strong>Role</strong> Programmer</p>
+
+    </div>
+</div>
+
+
+    <div id="project-archive" class="tile wide">
+        <div class="tile-title">
+            <h3>All Projects</h3>
+        </div>
+        <div class="tile-content">
+            
+            
+            
+                <div class="tile link" href="/2019/10/14/Project-EnosUmbrella/" instruction="Eno's Umbrella">
+                    <img src="/images/proj-eno.png">
+                </div>
+            
+                <div class="tile link" href="/2018/06/05/Project-Hexa/" instruction="Hexa">
+                    <img src="/images/proj-hexa.png">
+                </div>
+            
+                <div class="tile link" href="/2026/02/05/Project-BVW/" instruction="Building Virtual Worlds">
+                    <img src="/images/proj-bvw.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/07/Project-TechnicalAnimation/" instruction="Technical Animation Projects">
+                    <img src="/images/proj-ta.png">
+                </div>
+            
+                <div class="tile link" href="/2020/04/08/Project-SplineInterface/" instruction="Spline Interface for Intuitive Skinning Weight Editing">
+                    <img src="/images/proj-spline.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/21/Project-UnityEditor/" instruction="Unity Editor Extension and Tool Making">
+                    <img src="/images/proj-unityeditor.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/07/Project-LiftOffPGH/" instruction="Liftoff PGH 2020">
+                    <img src="/images/proj-liftoff.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/05/Project-LoveYourself/" instruction="Love Yourself">
+                    <img src="/images/proj-loveyourself.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Project-HighAvailability/" instruction="High Availability">
+                    <img src="/images/proj-highavailability.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Project-Letters/" instruction="Letters From The BattleField">
+                    <img src="/images/proj-letters.png">
+                </div>
+            
+                <div class="tile link" href="/2025/10/28/Project-TriggerTreat/" instruction="Trigger Treat">
+                    <img src="/images/proj-triggertreat.png">
+                </div>
+            
+                <div class="tile link" href="/2026/02/05/Project-DataReplay/" instruction="Data Replay">
+                    <img src="/images/proj-datareplay.png">
+                </div>
+            
+                <div class="tile link" href="/2019/10/18/Project-Card/" instruction="Card">
+                    <img src="/images/proj-card.png">
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right" class="group">
+    <!-- <div id="about" class="tile end border">
+        <img src="/images/icon-resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div> -->
+
+    
+    
+    <div id="video" class="tile">
+        <div class="title">
+            <h3>Videos</h3>
+        </div>
+        <div id="video-player" class="content">
+            <div id="api-player"></div>
+        </div>
+        <div id="video-select" class="content">
+            <div class="tile clickable">
+                <div class="select select-bg" select="nWryvhC41Oo" instruction="Spline Interface for Intuitive Skinning Weight Editing"></div>
+                <img src="/images/thumb-spline.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="kNO2yru0e9s" instruction="CCD IK and FABRIK"></div>
+                <img src="/images/thumb-ik.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="4JyUwbqGQyo" instruction="Hexahedron"></div>
+                <img src="/images/thumb-hexa.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="T4tKBBSb12Q" instruction="Whale You Were Here"></div>
+                <img src="/images/thumb-whale.png">
+            </div>
+        </div>
+    </div>
+    <div id="code" class="tile">
+        <div class="title">
+            <h3>Playground</h3>
+        </div>
+        <div id="code-editor" class="content">
+            <div id="editor" class="interactable"></div>
+            <div id="control">
+                <div id="run" class="btn small"><h3>Run</h3></div>
+                <div id="copy" class="btn small grey"><h3>Copy</h3></div>
+                <div id="status"></div>
+            </div>
+
+            <div id="output" class="interactable">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="group">
+    <div id="contact" class="tile border">
+        <div class="contact-link-bg">
+            <div class="btn link orange" href="mailto:rli@rongolia.com">
+                <img src="/images/icon-email.png"><h3 style="transform: translateX(20px);">Email me</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+        
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.linkedin.com/in/rongjia-li-81357919a/">
+                <img src="/images/icon-linkedin.png"><h3>LinkedIn</h3>
+            </div>
+            <div class="btn link" href="https://github.com/EricLee12138">
+                <img src="/images/icon-github.png"><h3>Github</h3>
+            </div>
+            <div class="btn link" href="https://www.etc.cmu.edu/blog/author/rongjial/">
+                <img src="/images/icon-etc.png"><h3>ETC</h3>
+            </div>
+            <div class="btn link" href="https://itch.io/profile/ericlee12138">
+                <img src="/images/icon-itch.png"><h3>Itch.io</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.youtube.com/channel/UC2NpEgeXotQdUs49Y6xDF1g">
+                <img src="/images/icon-youtube.png"><h3 style="color: red;">YouTube</h3>
+            </div>
+            <div class="btn link" href="https://www.twitch.tv/howdumbpeopleplaygames">
+                <img src="/images/icon-twitch.png"><h3 style="color: #9146FF;">Twitch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="tile">
+    <p class="no-margin">Welcome to Rongolia</p>
+    <!-- <p class="no-margin">Terms of Services | This Policy | That Policy | All Fake Policy</p> -->
+</div>
+
+    </div>
+
+    <div id="cursor">
+        <div id="cursor-instruction">
+            Instruction goes here...
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<!-- 
+[layout]
+<html>
+    [head] [/head]
+
+<body>
+    [index]
+
+    [nav] [/nav]
+
+    [body] [/body]
+
+    [footer] [/footer]
+
+    [/index]
+
+</body>
+</html>
+[/layout]
+ -->

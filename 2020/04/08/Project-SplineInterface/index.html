@@ -1,0 +1,530 @@
+<html>
+<!-- Head -->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <title>Rongolia</title>
+
+    <!-- <link rel="shortcut icon" href="/images/ericube.svg"> -->
+
+    <!-- Base css/js for all pages -->
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/cursor.css">
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/panel-left.css">
+<link rel="stylesheet" href="/css/panel-middle.css">
+<link rel="stylesheet" href="/css/panel-right.css">
+
+
+    
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/two.min.js"></script>
+
+    
+<script src="/vendor/ace/ace.js"></script>
+<script src="/vendor/ace/theme-monokai.js"></script>
+
+    
+<script src="/js/api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/editor.js"></script>
+
+
+    <!-- Page specific css/js -->
+    
+
+    
+        
+<link rel="stylesheet" href="/css/page-post.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                
+            })
+        </script>
+    
+
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <!-- Body -->
+    
+
+    <div id="container">
+
+        <!-- Navigator -->
+        <!-- <div class="group">
+    <div id="banner" class="tile border">
+    </div>
+
+    <div id="about" class="tile end border wide">
+        <img src="/images/resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div>
+</div> -->
+
+<div id="nav" class="tile border">
+    <div class="nav-link-bg">
+        <div id="nav-home" class="nav-link link heart no-frame" href="/">
+            <img src="/images/logo.png" style="
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform-origin: bottom right;
+                /* transform: scale(2); */
+            ">
+        </div>
+        <div style="display: none;">
+            <img src="/images/world.png" style="
+                position: absolute;
+                bottom: -138px;
+                right: -2px;
+            ">
+            <img src="/images/world-bg.png" style="
+                position: absolute;
+                bottom: -101px;
+                right: -2px;
+                z-index: -1;
+            ">
+        </div>
+    </div>
+
+    <div class="nav-gap"></div>
+    
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-experience" class="nav-link-bd">
+            </div>
+            <div id="nav-link-experience" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/experience">
+                    <h3>experience</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-projects" class="nav-link-bd">
+            </div>
+            <div id="nav-link-projects" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/projects">
+                    <h3>projects</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-education" class="nav-link-bd">
+            </div>
+            <div id="nav-link-education" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/education">
+                    <h3>education</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav-link-bg">
+            <div id="nav-link-bd-blogs" class="nav-link-bd">
+            </div>
+            <div id="nav-link-blogs" class="nav-link nav-link-btn hover clickable">
+                <div class="link" href="/blogs">
+                    <h3>blogs</h3>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="nav-gap"></div>
+
+    <div class="nav-settings">
+        <div id="nav-setting-room" class="nav-option btn link" instruction="Game room" href="/game">
+            <img src="/images/icon-room.png">
+        </div>
+        <div id="nav-setting-light" class="nav-option btn" instruction="Toggle light">
+            <img src="/images/icon-light.png">
+        </div>
+        <div id="nav-setting-music" class="nav-option btn" instruction="Toggle music">
+            <img src="/images/icon-music.png">
+        </div>
+        <div id="nav-setting-cat" class="nav-option btn no-frame heart">
+            <img id="cat" src="/images/icon-meow.gif">
+            <img src="/images/icon-toy.png">
+        </div>
+    </div>
+    <div id="load-mask" style="
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #f1efca;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    "></div>
+</div>
+
+        <!-- Body -->
+         <div class="body">
+            <div id="left" class="group">
+    <div id="poker" class="tile">
+        <div id="poker-card" class="content no-title no-frame heart">
+            
+            
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-1.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter spade"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-pic"><img src="/images/me-2.png"></div>
+                    <div class="card-suit"><img src="/images/spade.png"></div>
+                    <div class="card-letter spade"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-pic"><img src="/images/me-3.png"></div>
+                    <div class="card-suit"><img src="/images/diamond.png"></div>
+                    <div class="card-letter diamond"><h3>Q</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>K</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-4.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>K</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter heart"><h3>J</h3></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-pic"><img src="/images/me-0.png"></div>
+                    <div class="card-suit"><img src="/images/heart.png"></div>
+                    <div class="card-letter heart"><h3>J</h3></div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-letter club"><h3>Q</h3></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-pic"><img src="/images/me-5.png"></div>
+                    <div class="card-suit"><img src="/images/club.png"></div>
+                    <div class="card-letter club"><h3>Q</h3></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div id="about" class="tile end border">
+        <div class="link clickable" href="/files/resume.pdf"><h3>View Resume</h3></div>
+    </div>
+
+    
+        
+    
+
+    <!-- <div id="top-games" class="tile">
+        <div class="title">
+            <h3>Top Games</h3>
+        </div>
+        <div id="leaderboard" class="content">
+            
+            
+                <div class="tile link" href="">
+                    <div class="game-img"></div>
+                    <div class="game-rank"></div>
+                    <div class="game-name"></div>
+                </div>
+            
+        </div>
+    </div> -->
+</div>
+
+<div id="middle" class="group">
+    <div id="main" class="tile">
+        <div class="title">
+            <h3>Home</h3>
+        </div>
+        <div id="main-content" class="content">
+            
+
+    
+<iframe width="598" height="400" src="https://www.youtube.com/embed/nWryvhC41Oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<div id="post-content" class="tile wide text">
+    <div class="tile-content text">
+        <h1>Spline Interface for Intuitive Skinning Weight Editing</h1>
+
+        
+            
+        
+
+        <p>The project is aimed at designing and implementing a prototypical spline interface for skinning weights editing, which is inspired by <a target="_blank" rel="noopener" href="https://www.notion.so/Final-Project-Report-d4810c392f3f476b8de7376ab5d62777#e4ddb388b2174ff3b6147594a9ddc2d7">the paper</a> <em>Spline Interface for Weights Editing</em> and more intuitive and easier to use than common paint-based interfaces.</p>
+<p>Specifically, the interface will be implemented in Maya using Maya plug-in APIs.</p>
+<h2><span id="techniques">Techniques</span></h2><p>The interface has three main parts.</p>
+<p>The first part retrieves data from the original mesh and joints, namely the mesh verticies (MVs) and skinning weights. The second part allows users to create splines and specify the spline values. The third part uses original skinning weights, user defined splines and spline values as input and generate new weight values and set them back to the mesh and joints.</p>
+<h3><span id="retrieve-original-data">Retrieve original data</span></h3><p>As metioned before, original data of the mesh and joints are needed by the later steps.</p>
+<p>First, the current interface requires MVs for users to create splines. On the one hand, the interface should provide a way to select some vertices as control vertices (CVs). On the other hand, the interface has to know the actual position of each MV for B-spline generation. Maya has public class <code>MSelectionList</code> for making selection and <code>MItMeshVertex</code> for interating among the selected MVs.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// Global selection list</span><br>MSelectionList selectionList;<br>MGlobal::<span class="hljs-built_in">getActiveSelectionList</span>(selectionList);<br><br><span class="hljs-comment">// DAG path and component</span><br>MDagPath dagPath;<br>MObject component;<br><br><span class="hljs-comment">// DAG path and component of selected mesh</span><br>selectionList.<span class="hljs-built_in">getDagPath</span>(<span class="hljs-number">0</span>, dagPath, component);<br><br><span class="hljs-comment">// Mesh vertex iterator</span><br><span class="hljs-function">MItMeshVertex <span class="hljs-title">vertexIt</span><span class="hljs-params">(dagPath, component)</span></span>;<br></code></pre></td></tr></table></figure>
+
+<p>Second, the interface retrieves and stores the original skinning weights for the future use when calculating new weights. Similarly, interface should provide a way for selection of the specific mesh and joints before getting the actual weights. Maya uses public class <code>MFnSkinCluster</code> to retrieve skinning related data.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// Global selection list</span><br>MSelectionList selectionList;<br>MGlobal::<span class="hljs-built_in">getActiveSelectionList</span>(selectionList);<br><br><span class="hljs-comment">// DAG paths and components of selected joint and mesh</span><br>MDagPath jointDagPath, meshDagPath;<br>MObject jointComponent, meshComponent;<br>    <br>selectionList.<span class="hljs-built_in">getDagPath</span>(<span class="hljs-number">0</span>, jointDagPath, jointComponent);<br>selectionList.<span class="hljs-built_in">getDagPath</span>(<span class="hljs-number">1</span>, meshDagPath, meshComponent);<br><br><span class="hljs-comment">// ...</span><br><br><span class="hljs-comment">// Skin cluster</span><br><span class="hljs-function">MItDependencyNodes <span class="hljs-title">iter</span><span class="hljs-params">(MFn::kSkinClusterFilter)</span></span>;<br><span class="hljs-function">MFnSkinCluster <span class="hljs-title">skinCluster</span><span class="hljs-params">(iter.thisNode())</span></span>;<br></code></pre></td></tr></table></figure>
+
+<h3><span id="create-splines">Create splines</span></h3><p>The original paper uses the standard cubic B-spline model, which is widely used for its smoothness and local controllability. In Euclidean space, a B-spline curve is defined as a weighted sum of B-spline basis functions. Given a set of anchor points, a B-spline curve is given by:</p>
+<p>$$s(u)&#x3D;\sum_{i&#x3D;0}^{n-1}c_i^pR_{i,r}(u)$$</p>
+<p>There are plenty ways to create B-splines since it’s already a very common used model. Maya has its own APIs for creating B-splines as well, wrapped in the public class <code>MFnNurbsCurve</code>.</p>
+<p>The only thing that should be concerned about is the form of the spline and how to specify the required parameters. The spline should be working correctly as long as it’s closed, however, to make the visualization better, we applied a more restrictive form, a periodic form.</p>
+<p>Maya’s non-uniform rational B-spline (NURBS) curve is defined by an array of CVs, an array of knot values, a degree and a form, which is already decided to be a periodic form.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// Spline constants</span><br><span class="hljs-type">const</span> <span class="hljs-type">unsigned</span> deg = <span class="hljs-number">3</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">unsigned</span> nspans = vertexIt.<span class="hljs-built_in">count</span>() / splineNumber;<br><span class="hljs-type">const</span> <span class="hljs-type">unsigned</span> ncvs = nspans + deg;<br><span class="hljs-type">const</span> <span class="hljs-type">unsigned</span> nknots = nspans + <span class="hljs-number">2</span> * deg - <span class="hljs-number">1</span>;<br></code></pre></td></tr></table></figure>
+
+<p>After defining and calculating all the required parameters, the spline can be easily created by calling the <code>create</code> method:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// Control vertices and knots used to create splines</span><br>MPointArray controlVertices;<br>MDoubleArray knotSequences;<br><br><span class="hljs-comment">// Create periodic spline</span><br>MFnNurbsCurve curve;<br>curve.<span class="hljs-built_in">create</span>(controlVertices, knotSequences, deg,<br>            MFnNurbsCurve::kPeriodic, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, MObject::kNullObj, &amp;status);<br></code></pre></td></tr></table></figure>
+
+<p>The spline values are relatively easy to get since they are purely an array of floating numbers. Users can simply specify them in the command.</p>
+<h3><span id="calculate-weights">Calculate weights</span></h3><p>With splines and spline values specified and original weights retrieved and stored, we can calculate the new weights and set them back to the mesh and joints. The original paper has introduced several methods of weight conputation, including interpolation-based method, diffusion flow method and hybrid method. In this project, interpolation-based method with Laplacian operator is applied.</p>
+<p>According to the paper, the problem can be formulated within a surface with the linear equality constraint of splines:</p>
+<p>$$w^s&#x3D;\arg\min_x x^TQx\ \text{  subject to  }Ax&#x3D;s^i$$</p>
+<p>After the simplification, the mesh is a simple polygon cylinder, the splines can be considered as a set of MVs, and the original weights can be considered as simply a 2D array  of floating numbers. What’s more, the MVs and weights can be easily associated with indices. Therefore, the weight interpolation can be simplified as a 2D image filtering problem, which can be solved by Laplacian interpolation. <a target="_blank" rel="noopener" href="http://numerical.recipes/">The book</a> <em>Numerical Recipes 3rd Edition: The Art of Scientific Computing</em> has given a very detailed explanation and open-sourced implementation.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp">MatDoub matrix = <span class="hljs-built_in">NRmatrix</span>&lt;<span class="hljs-type">double</span>&gt;(<span class="hljs-number">49</span>, <span class="hljs-number">40</span>, weights);<br><span class="hljs-function">Laplace_interp <span class="hljs-title">interp</span><span class="hljs-params">(matrix)</span></span>;<br><br>interp.<span class="hljs-built_in">solve</span>();<br>newJointWeights.<span class="hljs-built_in">clear</span>();<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; interp.mat.<span class="hljs-built_in">nrows</span>(); i++) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; interp.mat.<span class="hljs-built_in">ncols</span>(); j++) &#123;<br>        newJointWeights.<span class="hljs-built_in">append</span>(interp.mat[i][j]);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2><span id="results">Results</span></h2><h3><span id="create-splines">Create splines</span></h3><img src="/md/result0.png" style="float:left;width:48%;margin-right:2%;margin-top:10px;margin-bottom:10px;">
+<img src="/md/result1.png" style="float:left;width:48%;margin-left:2%;margin-top:10px;margin-bottom:10px;">
+
+<h3><span id="calculate-weights">Calculate weights</span></h3><img src="/md/result2.png" style="float:left;width:48%;margin-right:2%;margin-top:10px;margin-bottom:10px;">
+<img src="/md/result3.png" style="float:left;width:48%;margin-left:2%;margin-top:10px;margin-bottom:10px;">
+
+<h2><span id="follow-up">Follow-up</span></h2><h3><span id="more-complicated-models-and-meshes">More complicated models and meshes</span></h3><p>Maya has its own rules of interating among all the MVs. The interface now only supports polygon cylinders or meshes that are deformed from polygon cylinders, because the current algorithm hasn’t considered the order of the MVs. It now doesn’t affect the weight calculation part so the weight values can be computed correctly. But the splines are not correctly generated.</p>
+<p>Therefore, to support more complicated models and meshes, the actual world position of each MV should be considered so as to know the order of the MVs when generating splines.</p>
+<h3><span id="more-delicate-user-interface">More delicate user interface</span></h3><p>One of the reasons why the original paper is very impressive is because the intuitive interface and the user experience can save users a lot of time compared to paint-based interfaces. The interface in this project is mainly focusing on implemeting the algorithm process, so the interface can hardly be considered effective and intuitive.</p>
+<p>Therefore, to actually help artists and animators reduce their work, more delicate and intuitove user interface should be created.</p>
+<h3><span id="spline-editing">Spline editing</span></h3><p>Similar to friendly interface, spline editing makes no difference in terms of the algorithm itself, but it is one of the factors that make the interface very easy to use and can be possibly used in real production.</p>
+<h3><span id="spline-on-mesh-surface">Spline on mesh surface</span></h3><p>In this project, the splines are generated using MVs as CVs, so they are in fact inside the mesh, which has to be changed when adding spline editing to the interface. The original paper uses Phong Projection to project the spline to the surface, which is a very important step.</p>
+<h3><span id="weight-computation">Weight computation</span></h3><p>As mentioned before, the original has applied multiple weight computation methods for better performance and effect. For example, interpolation-based methods are good at distributing values for the area between two iso-values, while the diffusion flow method is a better choice to calculatng weights for the rest of the area. Besides, even just for interpolation-based methods, different operators or energy can have different performance and results.</p>
+<p>Therefore, to improve the interface, a lot of different methods should be applied, compared and optimized, if necessary.</p>
+<h3><span id="weight-freezing">Weight freezing</span></h3><p>Mostly, the skinning weights will be edited and modified for several times. So one thing the interface should do is to maintain the weights of the current joint when modifying those of the next joint, which is also addressed by the original paper. For the current interface, it should be easy to do by simply storing all the modified weights and setting them back the mesh when all edits are done.</p>
+<h2><span id="references">References</span></h2><h3><span id="original-paper">Original Paper</span></h3><p>Go to the original paper <em>Spline Interface for Weights Editing</em> by SEUNGBAE BANG and SUNG-HEE LEE, Korea Advanced Institute of Science and Technology via <a target="_blank" rel="noopener" href="http://motionlab.kaist.ac.kr/?page_id=5457">this link</a>.</p>
+<h3><span id="math-library">Math library</span></h3><p>Maya provides a <a target="_blank" rel="noopener" href="https://help.autodesk.com/cloudhelp/2020/ENU/Maya-SDK-MERGED/cpp_ref/index.html">reference</a> for detailed documentation of the classes, methods, types and constants provided by the Maya API along with cross-linked source for the code samples provided in the Maya Development Kit.</p>
+<p>The enterprise of the book provides a very profession <a target="_blank" rel="noopener" href="http://numerical.recipes/">webpage</a> for all used resources in the book, including the book iteslf and the code implemetations.</p>
+<h3><span id="maya-plug-in-tutorial">Maya Plug-in Tutorial</span></h3><p>Autodesk has a set of tutorial pages for writing plug-ins, which provides detailed documentations and examples. Here is <a target="_blank" rel="noopener" href="https://help.autodesk.com/view/MAYAUL/2020/ENU/?guid=Maya_SDK_MERGED_Introduction_html">a link</a> to the tutorial page of Maya 2020.</p>
+
+    </div>
+</div>
+
+
+    <div id="project-archive" class="tile wide">
+        <div class="tile-title">
+            <h3>All Projects</h3>
+        </div>
+        <div class="tile-content">
+            
+            
+            
+                <div class="tile link" href="/2019/10/14/Project-EnosUmbrella/" instruction="Eno's Umbrella">
+                    <img src="/images/proj-eno.png">
+                </div>
+            
+                <div class="tile link" href="/2018/06/05/Project-Hexa/" instruction="Hexa">
+                    <img src="/images/proj-hexa.png">
+                </div>
+            
+                <div class="tile link" href="/2026/02/05/Project-BVW/" instruction="Building Virtual Worlds">
+                    <img src="/images/proj-bvw.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/07/Project-TechnicalAnimation/" instruction="Technical Animation Projects">
+                    <img src="/images/proj-ta.png">
+                </div>
+            
+                <div class="tile link" href="/2020/04/08/Project-SplineInterface/" instruction="Spline Interface for Intuitive Skinning Weight Editing">
+                    <img src="/images/proj-spline.png">
+                </div>
+            
+                <div class="tile link" href="/2020/01/21/Project-UnityEditor/" instruction="Unity Editor Extension and Tool Making">
+                    <img src="/images/proj-unityeditor.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/07/Project-LiftOffPGH/" instruction="Liftoff PGH 2020">
+                    <img src="/images/proj-liftoff.png">
+                </div>
+            
+                <div class="tile link" href="/2020/02/05/Project-LoveYourself/" instruction="Love Yourself">
+                    <img src="/images/proj-loveyourself.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Project-HighAvailability/" instruction="High Availability">
+                    <img src="/images/proj-highavailability.png">
+                </div>
+            
+                <div class="tile link" href="/2025/06/08/Project-Letters/" instruction="Letters From The BattleField">
+                    <img src="/images/proj-letters.png">
+                </div>
+            
+                <div class="tile link" href="/2025/10/28/Project-TriggerTreat/" instruction="Trigger Treat">
+                    <img src="/images/proj-triggertreat.png">
+                </div>
+            
+                <div class="tile link" href="/2026/02/05/Project-DataReplay/" instruction="Data Replay">
+                    <img src="/images/proj-datareplay.png">
+                </div>
+            
+                <div class="tile link" href="/2019/10/18/Project-Card/" instruction="Card">
+                    <img src="/images/proj-card.png">
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div id="right" class="group">
+    <!-- <div id="about" class="tile end border">
+        <img src="/images/icon-resume.png">
+        <div class="link clickable" href="/files/resume.pdf"><h3>Check My Resume</h3></div>
+    </div> -->
+
+    
+    
+    <div id="video" class="tile">
+        <div class="title">
+            <h3>Videos</h3>
+        </div>
+        <div id="video-player" class="content">
+            <div id="api-player"></div>
+        </div>
+        <div id="video-select" class="content">
+            <div class="tile clickable">
+                <div class="select select-bg" select="nWryvhC41Oo" instruction="Spline Interface for Intuitive Skinning Weight Editing"></div>
+                <img src="/images/thumb-spline.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="kNO2yru0e9s" instruction="CCD IK and FABRIK"></div>
+                <img src="/images/thumb-ik.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="4JyUwbqGQyo" instruction="Hexahedron"></div>
+                <img src="/images/thumb-hexa.png">
+            </div>
+            <div class="tile clickable">
+                <div class="select select-bg" select="T4tKBBSb12Q" instruction="Whale You Were Here"></div>
+                <img src="/images/thumb-whale.png">
+            </div>
+        </div>
+    </div>
+    <div id="code" class="tile">
+        <div class="title">
+            <h3>Playground</h3>
+        </div>
+        <div id="code-editor" class="content">
+            <div id="editor" class="interactable"></div>
+            <div id="control">
+                <div id="run" class="btn small"><h3>Run</h3></div>
+                <div id="copy" class="btn small grey"><h3>Copy</h3></div>
+                <div id="status"></div>
+            </div>
+
+            <div id="output" class="interactable">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="group">
+    <div id="contact" class="tile border">
+        <div class="contact-link-bg">
+            <div class="btn link orange" href="mailto:rli@rongolia.com">
+                <img src="/images/icon-email.png"><h3 style="transform: translateX(20px);">Email me</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+        
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.linkedin.com/in/rongjia-li-81357919a/">
+                <img src="/images/icon-linkedin.png"><h3>LinkedIn</h3>
+            </div>
+            <div class="btn link" href="https://github.com/EricLee12138">
+                <img src="/images/icon-github.png"><h3>Github</h3>
+            </div>
+            <div class="btn link" href="https://www.etc.cmu.edu/blog/author/rongjial/">
+                <img src="/images/icon-etc.png"><h3>ETC</h3>
+            </div>
+            <div class="btn link" href="https://itch.io/profile/ericlee12138">
+                <img src="/images/icon-itch.png"><h3>Itch.io</h3>
+            </div>
+        </div>
+    
+        <div class="contact-gap"></div>
+
+        <div class="contact-link-bg">
+            <div class="btn link" href="https://www.youtube.com/channel/UC2NpEgeXotQdUs49Y6xDF1g">
+                <img src="/images/icon-youtube.png"><h3 style="color: red;">YouTube</h3>
+            </div>
+            <div class="btn link" href="https://www.twitch.tv/howdumbpeopleplaygames">
+                <img src="/images/icon-twitch.png"><h3 style="color: #9146FF;">Twitch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="tile">
+    <p class="no-margin">Welcome to Rongolia</p>
+    <!-- <p class="no-margin">Terms of Services | This Policy | That Policy | All Fake Policy</p> -->
+</div>
+
+    </div>
+
+    <div id="cursor">
+        <div id="cursor-instruction">
+            Instruction goes here...
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+<!-- 
+[layout]
+<html>
+    [head] [/head]
+
+<body>
+    [index]
+
+    [nav] [/nav]
+
+    [body] [/body]
+
+    [footer] [/footer]
+
+    [/index]
+
+</body>
+</html>
+[/layout]
+ -->
