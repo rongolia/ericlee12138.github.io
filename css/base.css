@@ -55,6 +55,12 @@ body {
     image-rendering: pixelated;
     backdrop-filter: brightness(0.5);
 }
+ul {
+    padding-inline-start: 25px;
+}
+li {
+    margin-block-end: 0.5em;
+}
 
 div.body {
     display: flex;
@@ -82,7 +88,7 @@ div.tile div.title
 {
     width: 100%;
     height: var(--title-height);
-    padding: 2px 0 4px 12px;
+    padding: 2px 4px 4px 12px;
     border-image: var(--title-border-image);
     border-image-width: var(--title-border-width);
     border-image-slice: var(--title-border-slice);

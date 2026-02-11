@@ -128,7 +128,7 @@ div.title h3, div.tile-title h3 {
     margin: 0;
 }
 div.title h3 {
-    transform: translateY(-0.5em);
+    transform: translateY(-0.45em);
     line-height: 16px;
 }
 div.tile-title h3 {

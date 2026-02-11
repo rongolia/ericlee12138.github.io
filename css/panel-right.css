@@ -35,18 +35,18 @@ div#game-jam div.title {
 div#game-jam div.jam-controls {
     display: flex;
     align-items: center;
-    padding-right: 6px;
     height: calc(var(--title-height) - 8px);
 }
 div#game-jam div.jam-controls h3 {
     transform: initial;
     font-size: 6px;
+    line-height: 17px;
 }
 div#game-jam div.jam-controls div.clickable {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 18px;
+    min-width: 16px;
     height: 100%;
 }
 div#game-jam div.jam-controls div.clickable.disabled {
