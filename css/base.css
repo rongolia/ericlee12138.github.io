@@ -75,7 +75,7 @@ div.tile {
     min-height: 25px;
     display: inline-block;
     background-size: cover;
-    box-shadow: -6px 6px 0 #77777777;
+    box-shadow: -6px 6px 0 #55555577;
     background-color: transparent;
 }
 div.tile div.title, div.tile div.content, div.tile.border
